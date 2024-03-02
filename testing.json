@@ -1,4 +1,4 @@
-[
+
 	{
 	    "instruction": "Help me set up my daily to-do list!",
 	    "input": "Setting up your daily to-do list...",
@@ -389,4 +389,3 @@
 	    "output": "```python\nimport matplotlib.pyplot as plt\nimport tensorflow as tf\nfrom tensorflow.keras.models import Model\nmodel = tf.keras.models.load_model('my_model.h5')\nlayer_outputs = [layer.output for layer in model.layers]\nactivation_model = Model(inputs=model.input, outputs=layer_outputs)\nactivations = activation_model.predict(input_data)\nplt.matshow(activations[0][0, :, :, 4], cmap='viridis')\n```",
 	    "text": "Visualize the activations of a neural network layer Visualizing activations... ```python\nimport matplotlib.pyplot as plt\nimport tensorflow as tf\nfrom tensorflow.keras.models import Model\nmodel = tf.keras.models.load_model('my_model.h5')\nlayer_outputs = [layer.output for layer in model.layers]\nactivation_model = Model(inputs=model.input, outputs=layer_outputs)\nactivations = activation_model.predict(input_data)\nplt.matshow(activations[0][0, :, :, 4], cmap='viridis')\n```"
 	}
-]
