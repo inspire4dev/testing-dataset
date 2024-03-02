@@ -1,0 +1,619 @@
+[
+	{
+	    "instruction": "Help me set up my daily to-do list!",
+	    "input": "Setting up your daily to-do list...",
+	    "output": "```python\ntasks = []\nwhile True:\n    task = input('Enter a task or type 'done' to finish: ')\n    if task == 'done': break\n    tasks.append(task)\nprint(f'Your to-do list for today: {tasks}')\n```",
+	    "text": "Help me set up my daily to-do list! Setting up your daily to-do list... ```python\ntasks = []\nwhile True:\n    task = input('Enter a task or type 'done' to finish: ')\n    if task == 'done': break\n    tasks.append(task)\nprint(f'Your to-do list for today: {tasks}')\n```"
+	},
+	{
+	    "instruction": "Create a shopping list based on my inputs!",
+	    "input": "Creating a shopping list...",
+	    "output": "```python\nshopping_list = {}\nwhile True:\n    item = input('Enter an item or type 'done' to finish: ')\n    if item == 'done': break\n    quantity = input(f'Enter the quantity for {item}: ')\n    shopping_list[item] = quantity\nprint(f'Your shopping list: {shopping_list}')\n```",
+	    "text": "Create a shopping list based on my inputs! Creating a shopping list... ```python\nshopping_list = {}\nwhile True:\n    item = input('Enter an item or type 'done' to finish: ')\n    if item == 'done': break\n    quantity = input(f'Enter the quantity for {item}: ')\n    shopping_list[item] = quantity\nprint(f'Your shopping list: {shopping_list}')\n```"
+	},
+	{
+	    "instruction": "Calculate how much time I spend on my phone per week!",
+	    "input": "Calculating weekly phone usage...",
+	    "output": "```python\ntotal_time = 0\nfor i in range(1, 8):\n    time = float(input(f'Enter phone usage in hours for day {i}: '))\n    total_time += time\nprint(f'You spend approximately {total_time} hours per week on your phone.')\n```",
+	    "text": "Calculate how much time I spend on my phone per week! Calculating weekly phone usage... ```python\ntotal_time = 0\nfor i in range(1, 8):\n    time = float(input(f'Enter phone usage in hours for day {i}: '))\n    total_time += time\nprint(f'You spend approximately {total_time} hours per week on your phone.')\n```"
+	},
+	{
+	    "instruction": "Help me split the bill among my friends!",
+	    "input": "Splitting the bill...",
+	    "output": "```python\ntotal_bill = float(input('Enter the total bill amount: '))\nfriends_count = int(input('Enter the number of friends: '))\nper_person = total_bill / friends_count\nprint(f'Each person should pay {per_person}')\n```",
+	    "text": "Help me split the bill among my friends! Splitting the bill... ```python\ntotal_bill = float(input('Enter the total bill amount: '))\nfriends_count = int(input('Enter the number of friends: '))\nper_person = total_bill / friends_count\nprint(f'Each person should pay {per_person}')\n```"
+	},
+	{
+	    "instruction": "Organize my movie list into genres!",
+	    "input": "Organizing your movie list...",
+	    "output": "```python\nmovie_list = {}\nwhile True:\n    genre = input('Enter a movie genre or type 'done' to finish: ')\n    if genre == 'done': break\n    movie = input(f'Enter a movie for the {genre} genre: ')\n    movie_list.setdefault(genre, []).append(movie)\nprint(f'Your organized movie list: {movie_list}')\n```",
+	    "text": "Organize my movie list into genres! Organizing your movie list... ```python\nmovie_list = {}\nwhile True:\n    genre = input('Enter a movie genre or type 'done' to finish: ')\n    if genre == 'done': break\n    movie = input(f'Enter a movie for the {genre} genre: ')\n    movie_list.setdefault(genre, []).append(movie)\nprint(f'Your organized movie list: {movie_list}')\n```"
+	},
+	{
+	    "instruction": "Calculate the average rating of my book collection!",
+	    "input": "Calculating the average rating of your book collection...",
+	    "output": "```python\nratings = []\nwhile True:\n    rating = input('Enter a book rating or type 'done' to finish: ')\n    if rating == 'done': break\n    ratings.append(float(rating))\naverage_rating = sum(ratings) / len(ratings)\nprint(f'The average rating of your book collection is {average_rating}')\n```",
+	    "text": "Calculate the average rating of my book collection! Calculating the average rating of your book collection... ```python\nratings = []\nwhile True:\n    rating = input('Enter a book rating or type 'done' to finish: ')\n    if rating == 'done': break\n    ratings.append(float(rating))\naverage_rating = sum(ratings) / len(ratings)\nprint(f'The average rating of your book collection is {average_rating}')\n```"
+	},
+	{
+	    "instruction": "Create a playlist based on my mood!",
+	    "input": "Creating a playlist...",
+	    "output": "```python\nmood = input('What's your mood today? ')\nplaylist = []\nwhile True:\n    song = input(f'Enter a song that fits your {mood} mood or type 'done' to finish: ')\n    if song == 'done': break\n    playlist.append(song)\nprint(f'Your {mood} playlist: {playlist}')\n```",
+	    "text": "Create a playlist based on my mood! Creating a playlist... ```python\nmood = input('What's your mood today? ')\nplaylist = []\nwhile True:\n    song = input(f'Enter a song that fits your {mood} mood or type 'done' to finish: ')\n    if song == 'done': break\n    playlist.append(song)\nprint(f'Your {mood} playlist: {playlist}')\n```"
+	},
+	{
+	    "instruction": "Help me find the best deals on my shopping list!",
+	    "input": "Finding the best deals...",
+	    "output": "```python\nbest_deals = {}\nwhile True:\n    item = input('Enter a shopping item or type 'done' to finish: ')\n    if item == 'done': break\n    price = float(input(f'Enter the best price you found for {item}: '))\n    best_deals[item] = price\nprint(f'The best deals for your shopping list: {best_deals}')\n```",
+	    "text": "Help me find the best deals on my shopping list! Finding the best deals... ```python\nbest_deals = {}\nwhile True:\n    item = input('Enter a shopping item or type 'done' to finish: ')\n    if item == 'done': break\n    price = float(input(f'Enter the best price you found for {item}: '))\n    best_deals[item] = price\nprint(f'The best deals for your shopping list: {best_deals}')\n```"
+	},
+	{
+	    "instruction": "Calculate how much I need to save per month for my vacation!",
+	    "input": "Calculating monthly savings for your vacation...",
+	    "output": "```python\nvacation_cost = float(input('Enter the total cost of your vacation: '))\nmonths_left = int(input('Enter the number of months until your vacation: '))\nmonthly_savings = vacation_cost / months_left\nprint(f'You need to save {monthly_savings} per month for your vacation.')\n```",
+	    "text": "Calculate how much I need to save per month for my vacation! Calculating monthly savings for your vacation... ```python\nvacation_cost = float(input('Enter the total cost of your vacation: '))\nmonths_left = int(input('Enter the number of months until your vacation: '))\nmonthly_savings = vacation_cost / months_left\nprint(f'You need to save {monthly_savings} per month for your vacation.')\n```"
+	},
+	{
+	    "instruction": "Determine the most efficient route for my errands!",
+	    "input": "Determining the most efficient route...",
+	    "output": "```python\nlocations = []\nwhile True:\n    location = input('Enter a location for your errands or type 'done' to finish: ')\n    if location == 'done': break\n    locations.append(location)\n# Assuming first location is the starting point\nprint(f'The most efficient route: {locations[0]} -> {' -> '.join(sorted(locations[1:]))} -> {locations[0]}')\n```",
+	    "text": "Determine the most efficient route for my errands! Determining the most efficient route... ```python\nlocations = []\nwhile True:\n    location = input('Enter a location for your errands or type 'done' to finish: ')\n    if location == 'done': break\n    locations.append(location)\n# Assuming first location is the starting point\nprint(f'The most efficient route: {locations[0]} -> {' -> '.join(sorted(locations[1:]))} -> {locations[0]}')\n```"
+	},
+	{
+	    "instruction": "Help me manage my subscriptions!",
+	    "input": "Managing your subscriptions...",
+	    "output": "```python\nsubscriptions = {}\nwhile True:\n    name = input('Enter the subscription name or type 'done' to finish: ')\n    if name == 'done': break\n    cost = float(input(f'Enter the monthly cost for {name}: '))\n    subscriptions[name] = cost\nprint(f'Your subscriptions: {subscriptions}')\n```",
+	    "text": "Help me manage my subscriptions! Managing your subscriptions... ```python\nsubscriptions = {}\nwhile True:\n    name = input('Enter the subscription name or type 'done' to finish: ')\n    if name == 'done': break\n    cost = float(input(f'Enter the monthly cost for {name}: '))\n    subscriptions[name] = cost\nprint(f'Your subscriptions: {subscriptions}')\n```"
+	},
+	{
+	    "instruction": "Create a meal plan for the week!",
+	    "input": "Creating a meal plan...",
+	    "output": "```python\nmeal_plan = {}\nfor day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:\n    meal = input(f'What meal would you like to have on {day}? ')\n    meal_plan[day] = meal\nprint(f'Your meal plan for the week: {meal_plan}')\n```",
+	    "text": "Create a meal plan for the week! Creating a meal plan... ```python\nmeal_plan = {}\nfor day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:\n    meal = input(f'What meal would you like to have on {day}? ')\n    meal_plan[day] = meal\nprint(f'Your meal plan for the week: {meal_plan}')\n```"
+	},
+	{
+	    "instruction": "Calculate my carbon footprint based on my daily activities!",
+	    "input": "Calculating your carbon footprint...",
+	    "output": "```python\ntransport = input('How do you usually commute (car, bike, walk, public)? ')\nfood = input('Are you a vegetarian, vegan, or omnivore? ')\nelectricity = float(input('Approximate monthly electricity bill: '))\ncarbon_footprint = {'car': 2.4, 'bike': 0.1, 'walk': 0, 'public': 1}[transport] + {'vegetarian': 1, 'vegan': 0.7, 'omnivore': 1.5}[food] + (electricity * 0.001)\nprint(f'Your estimated daily carbon footprint is {carbon_footprint} kg.')\n```",
+	    "text": "Calculate my carbon footprint based on my daily activities! Calculating your carbon footprint... ```python\ntransport = input('How do you usually commute (car, bike, walk, public)? ')\nfood = input('Are you a vegetarian, vegan, or omnivore? ')\nelectricity = float(input('Approximate monthly electricity bill: '))\ncarbon_footprint = {'car': 2.4, 'bike': 0.1, 'walk': 0, 'public': 1}[transport] + {'vegetarian': 1, 'vegan': 0.7, 'omnivore': 1.5}[food] + (electricity * 0.001)\nprint(f'Your estimated daily carbon footprint is {carbon_footprint} kg.')\n```"
+	},
+	{
+	    "instruction": "Help me set reminders for my favorite TV shows!",
+	    "input": "Setting reminders for TV shows...",
+	    "output": "```python\ntv_reminders = {}\nwhile True:\n    show = input('Enter the TV show name or type 'done' to finish: ')\n    if show == 'done': break\n    time = input(f'What time does {show} air? ')\n    tv_reminders[show] = time\nprint(f'Your TV show reminders: {tv_reminders}')\n```",
+	    "text": "Help me set reminders for my favorite TV shows! Setting reminders for TV shows... ```python\ntv_reminders = {}\nwhile True:\n    show = input('Enter the TV show name or type 'done' to finish: ')\n    if show == 'done': break\n    time = input(f'What time does {show} air? ')\n    tv_reminders[show] = time\nprint(f'Your TV show reminders: {tv_reminders}')\n```"
+	},
+	{
+	    "instruction": "Assist me in managing my study schedule!",
+	    "input": "Managing your study schedule...",
+	    "output": "```python\nstudy_schedule = {}\nsubjects = input('Enter the subjects you are studying separated by commas: ').split(', ')\nfor subject in subjects:\n    hours = int(input(f'How many hours do you want to allocate to {subject}? '))\n    study_schedule[subject] = hours\nprint(f'Your study schedule: {study_schedule}')\n```",
+	    "text": "Assist me in managing my study schedule! Managing your study schedule... ```python\nstudy_schedule = {}\nsubjects = input('Enter the subjects you are studying separated by commas: ').split(', ')\nfor subject in subjects:\n    hours = int(input(f'How many hours do you want to allocate to {subject}? '))\n    study_schedule[subject] = hours\nprint(f'Your study schedule: {study_schedule}')\n```"
+	},
+	{
+	    "instruction": "Help me calculate the ROI for my investments!",
+	    "input": "Calculating the ROI for your investments...",
+	    "output": "```python\ninitial_investment = float(input('Enter the initial investment amount: '))\nfinal_value = float(input('Enter the final value of the investment: '))\nroi = ((final_value - initial_investment) / initial_investment) * 100\nprint(f'Your ROI is {roi:.2f}%')\n```",
+	    "text": "Help me calculate the ROI for my investments! Calculating the ROI for your investments... ```python\ninitial_investment = float(input('Enter the initial investment amount: '))\nfinal_value = float(input('Enter the final value of the investment: '))\nroi = ((final_value - initial_investment) / initial_investment) * 100\nprint(f'Your ROI is {roi:.2f}%')\n```"
+	},
+	{
+	    "instruction": "Assist me in tracking my water intake!",
+	    "input": "Tracking your water intake...",
+	    "output": "```python\nwater_intake = 0\nwhile True:\n    intake = input('Enter the amount of water consumed in ml or type 'done' to finish: ')\n    if intake == 'done': break\n    water_intake += int(intake)\nprint(f'Your total water intake today is {water_intake} ml.')\n```",
+	    "text": "Assist me in tracking my water intake! Tracking your water intake... ```python\nwater_intake = 0\nwhile True:\n    intake = input('Enter the amount of water consumed in ml or type 'done' to finish: ')\n    if intake == 'done': break\n    water_intake += int(intake)\nprint(f'Your total water intake today is {water_intake} ml.')\n```"
+	},
+	{
+	    "instruction": "Help me find the best time to post on social media based on my followers!",
+	    "input": "Finding the best time to post...",
+	    "output": "```python\nfollower_timezones = input('Enter the timezones of your followers separated by commas: ').split(', ')\nbest_time = max(set(follower_timezones), key = follower_timezones.count)\nprint(f'The best time to post is when it's afternoon in the {best_time} timezone.')\n```",
+	    "text": "Help me find the best time to post on social media based on my followers! Finding the best time to post... ```python\nfollower_timezones = input('Enter the timezones of your followers separated by commas: ').split(', ')\nbest_time = max(set(follower_timezones), key = follower_timezones.count)\nprint(f'The best time to post is when it's afternoon in the {best_time} timezone.')\n```"
+	},
+	{
+	    "instruction": "Assist me in calculating my monthly budget!",
+	    "input": "Calculating your monthly budget...",
+	    "output": "```python\nincome = float(input('Enter your monthly income: '))\nexpenses = float(input('Enter your total monthly expenses: '))\nnet_income = income - expenses\nprint(f'Your net income for the month is {net_income}')\n```",
+	    "text": "Assist me in calculating my monthly budget! Calculating your monthly budget... ```python\nincome = float(input('Enter your monthly income: '))\nexpenses = float(input('Enter your total monthly expenses: '))\nnet_income = income - expenses\nprint(f'Your net income for the month is {net_income}')\n```"
+	},
+	{
+	    "instruction": "Calculate my coffee consumption",
+	    "input": "Calculating your coffee consumption...",
+	    "output": "```python\ncups_per_day = int(input('How many cups of coffee do you drink daily? '))\nannual_consumption = cups_per_day * 365\nprint(f'You consume {annual_consumption} cups of coffee per year.')\n```",
+	    "text": "Calculate my coffee consumption Calculating your coffee consumption... ```python\ncups_per_day = int(input('How many cups of coffee do you drink daily? '))\nannual_consumption = cups_per_day * 365\nprint(f'You consume {annual_consumption} cups of coffee per year.')\n```"
+	},
+	{
+	    "instruction": "Help me balance my diet",
+	    "input": "Balancing your diet...",
+	    "output": "```python\ncalories = int(input('Enter your daily calorie goal: '))\nprotein = int(input('Enter your daily protein goal in grams: '))\nprint(f'To balance your diet, aim for {calories} calories and {protein}g of protein daily.')\n```",
+	    "text": "Help me balance my diet Balancing your diet... ```python\ncalories = int(input('Enter your daily calorie goal: '))\nprotein = int(input('Enter your daily protein goal in grams: '))\nprint(f'To balance your diet, aim for {calories} calories and {protein}g of protein daily.')\n```"
+	},
+	{
+	    "instruction": "Help me set fitness goals",
+	    "input": "Setting your fitness goals...",
+	    "output": "```python\ncurrent_weight = float(input('Enter your current weight in kg: '))\ntarget_weight = float(input('Enter your target weight in kg: '))\nweeks = int(input('In how many weeks do you want to achieve this? '))\nweekly_goal = (current_weight - target_weight) / weeks\nprint(f'You need to lose {weekly_goal:.2f} kg per week.')\n```",
+	    "text": "Help me set fitness goals Setting your fitness goals... ```python\ncurrent_weight = float(input('Enter your current weight in kg: '))\ntarget_weight = float(input('Enter your target weight in kg: '))\nweeks = int(input('In how many weeks do you want to achieve this? '))\nweekly_goal = (current_weight - target_weight) / weeks\nprint(f'You need to lose {weekly_goal:.2f} kg per week.')\n```"
+	},
+	{
+	    "instruction": "Sort my favorite quotes",
+	    "input": "Sorting your favorite quotes...",
+	    "output": "```python\nquotes = []\nwhile True:\n    quote = input('Enter a favorite quote or type 'done' to finish: ')\n    if quote == 'done': break\n    quotes.append(quote)\nprint(f'Your sorted quotes: {sorted(quotes)}')\n```",
+	    "text": "Sort my favorite quotes Sorting your favorite quotes... ```python\nquotes = []\nwhile True:\n    quote = input('Enter a favorite quote or type 'done' to finish: ')\n    if quote == 'done': break\n    quotes.append(quote)\nprint(f'Your sorted quotes: {sorted(quotes)}')\n```"
+	},
+	{
+	    "instruction": "Help me manage my reading list",
+	    "input": "Managing your reading list...",
+	    "output": "```python\nreading_list = []\nwhile True:\n    book = input('Add a book to your reading list or type 'done' to finish: ')\n    if book == 'done': break\n    reading_list.append(book)\nprint(f'Your reading list: {reading_list}')\n```",
+	    "text": "Help me manage my reading list Managing your reading list... ```python\nreading_list = []\nwhile True:\n    book = input('Add a book to your reading list or type 'done' to finish: ')\n    if book == 'done': break\n    reading_list.append(book)\nprint(f'Your reading list: {reading_list}')\n```"
+	},
+	{
+	    "instruction": "Recommend me a movie based on my mood",
+	    "input": "Recommending a movie...",
+	    "output": "```python\nmood = input('What is your mood? ')\nmood_to_movie = {'happy': 'La La Land', 'sad': 'The Pursuit of Happyness', 'excited': 'Fast & Furious'}\nprint(f'Recommended movie: {mood_to_movie.get(mood, \"Sorry, I don't have a recommendation for that mood.\")}')\n```",
+	    "text": "Recommend me a movie based on my mood Recommending a movie... ```python\nmood = input('What is your mood? ')\nmood_to_movie = {'happy': 'La La Land', 'sad': 'The Pursuit of Happyness', 'excited': 'Fast & Furious'}\nprint(f'Recommended movie: {mood_to_movie.get(mood, \"Sorry, I don't have a recommendation for that mood.\")}')\n```"
+	},
+	{
+	    "instruction": "Calculate how much I should tip",
+	    "input": "Calculating your tip...",
+	    "output": "```python\nbill = float(input('Enter the total bill amount: '))\ntip_percent = int(input('Enter the tip percentage you want to leave: '))\ntip_amount = (bill * tip_percent) / 100\nprint(f'You should leave a tip of {tip_amount:.2f}')\n```",
+	    "text": "Calculate how much I should tip Calculating your tip... ```python\nbill = float(input('Enter the total bill amount: '))\ntip_percent = int(input('Enter the tip percentage you want to leave: '))\ntip_amount = (bill * tip_percent) / 100\nprint(f'You should leave a tip of {tip_amount:.2f}')\n```"
+	},
+	{
+	    "instruction": "Find me the best day to book a flight",
+	    "input": "Finding the best day...",
+	    "output": "```python\ndays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']\n# Typically, flights are cheaper on Tuesdays and Wednesdays\nbest_days = ['Tuesday', 'Wednesday']\nprint(f'The best days to book a flight are usually {best_days}')\n```",
+	    "text": "Find me the best day to book a flight Finding the best day... ```python\ndays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']\n# Typically, flights are cheaper on Tuesdays and Wednesdays\nbest_days = ['Tuesday', 'Wednesday']\nprint(f'The best days to book a flight are usually {best_days}')\n```"
+	},
+	{
+	    "instruction": "Calculate my screen time",
+	    "input": "Calculating your screen time...",
+	    "output": "```python\ndaily_screen_time = int(input('Enter your daily screen time in minutes: '))\nweekly_screen_time = daily_screen_time * 7\nprint(f'Your weekly screen time is {weekly_screen_time} minutes.')\n```",
+	    "text": "Calculate my screen time Calculating your screen time... ```python\ndaily_screen_time = int(input('Enter your daily screen time in minutes: '))\nweekly_screen_time = daily_screen_time * 7\nprint(f'Your weekly screen time is {weekly_screen_time} minutes.')\n```"
+	},
+	{
+	    "instruction": "Switch to dark mode",
+	    "input": "Switching to dark mode...",
+	    "output": "```python\nimport os\nos.system('dark-mode on')\n```",
+	    "text": "Switch to dark mode Switching to dark mode... ```python\nimport os\nos.system('dark-mode on')\n```"
+	},
+	{
+	    "instruction": "Open a random browser tab from a list of my favorite websites",
+	    "input": "Opening a random favorite website...",
+	    "output": "```python\nimport random\nimport webbrowser\nwebsites = ['https://www.reddit.com', 'https://www.youtube.com', 'https://www.github.com']\nwebbrowser.open(random.choice(websites))\n```",
+	    "text": "Open a random browser tab from a list of my favorite websites Opening a random favorite website... ```python\nimport random\nimport webbrowser\nwebsites = ['https://www.reddit.com', 'https://www.youtube.com', 'https://www.github.com']\nwebbrowser.open(random.choice(websites))\n```"
+	},
+	{
+	    "instruction": "Create a quick text note",
+	    "input": "Creating a text note...",
+	    "output": "```python\nnote = input('Enter your note: ')\nwith open('quick_note.txt', 'w') as f:\n    f.write(note)\n```",
+	    "text": "Create a quick text note Creating a text note... ```python\nnote = input('Enter your note: ')\nwith open('quick_note.txt', 'w') as f:\n    f.write(note)\n```"
+	},
+	{
+	    "instruction": "Restart my PC now!",
+	    "input": "Restarting your PC...",
+	    "output": "```python\nimport os\nimport time\nreboot_time = input('Please enter the time for reboot in minutes or type now for immediate reboot: ')\nif reboot_time.lower() == 'now':\n    os.system('reboot')\nelse:\n    time.sleep(int(reboot_time) * 60)\n    os.system('reboot')\n```",
+	    "text": "Restart my PC now! Restarting your PC... ```python\nimport os\nimport time\nreboot_time = input('Please enter the time for reboot in minutes or type now for immediate reboot: ')\nif reboot_time.lower() == 'now':\n    os.system('reboot')\nelse:\n    time.sleep(int(reboot_time) * 60)\n    os.system('reboot')\n```"
+	},
+	{
+	    "instruction": "Empty my recycle bin",
+	    "input": "Emptying your recycle bin...",
+	    "output": "```python\nimport os\nos.system('EmptyRecycleBin.exe')\n```",
+	    "text": "Empty my recycle bin Emptying your recycle bin... ```python\nimport os\nos.system('EmptyRecycleBin.exe')\n```"
+	},
+	{
+	    "instruction": "Set my desktop background color to black",
+	    "input": "Setting desktop background color...",
+	    "output": "```python\nimport ctypes\nc_types.windll.user32.SystemParametersInfoW(20, 0, 'C:\\\\path\\\\to\\\\black.jpg', 3)\n```",
+	    "text": "Set my desktop background color to black Setting desktop background color... ```python\nimport ctypes\nc_types.windll.user32.SystemParametersInfoW(20, 0, 'C:\\\\path\\\\to\\\\black.jpg', 3)\n```"
+	},
+	{
+	    "instruction": "Show system information",
+	    "input": "Showing system information...",
+	    "output": "```python\nimport platform\nprint(f'OS: {platform.system()}\nVersion: {platform.version()}\nArchitecture: {platform.architecture()[0]}')\n```",
+	    "text": "Show system information Showing system information... ```python\nimport platform\nprint(f'OS: {platform.system()}\nVersion: {platform.version()}\nArchitecture: {platform.architecture()[0]}')\n```"
+	},
+	{
+	    "instruction": "Find the largest file in a given folder",
+	    "input": "Finding the largest file...",
+	    "output": "```python\nimport os\nfolder = input('Enter folder path: ')\nall_files = [(f, os.path.getsize(os.path.join(folder, f))) for f in os.listdir(folder) if os.path.isfile(os.path.join(folder, f))]\nprint(f'Largest file: {max(all_files, key=lambda x: x[1])[0]}')\n```",
+	    "text": "Find the largest file in a given folder Finding the largest file... ```python\nimport os\nfolder = input('Enter folder path: ')\nall_files = [(f, os.path.getsize(os.path.join(folder, f))) for f in os.listdir(folder) if os.path.isfile(os.path.join(folder, f))]\nprint(f'Largest file: {max(all_files, key=lambda x: x[1])[0]}')\n```"
+	},
+	{
+	    "instruction": "Close all instances of a specific application",
+	    "input": "Closing all instances...",
+	    "output": "```python\nimport os\napp = input('Enter the name of the application to close: ')\nos.system(f'taskkill /F /IM {app}.exe')\n```",
+	    "text": "Close all instances of a specific application Closing all instances... ```python\nimport os\napp = input('Enter the name of the application to close: ')\nos.system(f'taskkill /F /IM {app}.exe')\n```"
+	},
+	{
+	    "instruction": "Toggle airplane mode",
+	    "input": "Toggling airplane mode...",
+	    "output": "```python\nimport os\nos.system('airplane-mode toggle')\n```",
+	    "text": "Toggle airplane mode Toggling airplane mode... ```python\nimport os\nos.system('airplane-mode toggle')\n```"
+	},
+	{
+	    "instruction": "Clone a GitHub repository",
+	    "input": "",
+	    "output": "```python\nimport os\nrepo_url = input('Enter the GitHub repository URL: ')\nos.system(f'git clone {repo_url}')\n```",
+	    "text": "Clone a GitHub repository Cloning a GitHub repository... ```python\nimport os\nrepo_url = input('Enter the GitHub repository URL: ')\nos.system(f'git clone {repo_url}')\n```"
+	},
+	{
+	    "instruction": "Create a SQLite database and table",
+	    "input": "Creating SQLite database and table...",
+	    "output": "```python\nimport sqlite3\nconn = sqlite3.connect('database.db')\nc = conn.cursor()\nc.execute('''CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)''')\nconn.commit()\nconn.close()\n```",
+	    "text": "Create a SQLite database and table Creating SQLite database and table... ```python\nimport sqlite3\nconn = sqlite3.connect('database.db')\nc = conn.cursor()\nc.execute('''CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)''')\nconn.commit()\nconn.close()\n```"
+	},
+	{
+	    "instruction": "Update all Python packages",
+	    "input": "Updating all Python packages...",
+	    "output": "```python\nimport os\nos.system('pip freeze --local | grep -v '^\\-e' | cut -d = -f 1  | xargs -n1 pip install -U')\n```",
+	    "text": "Update all Python packages Updating all Python packages... ```python\nimport os\nos.system('pip freeze --local | grep -v '^\\-e' | cut -d = -f 1  | xargs -n1 pip install -U')\n```"
+	},
+	{
+	    "instruction": "Run a Python script at a specific time",
+	    "input": "Running a script at a specific time...",
+	    "output": "```python\nimport time\nimport os\nfrom datetime import datetime\nrun_time = input('Enter the time to run the script (HH:MM): ')\nwhile True:\n    if datetime.now().strftime('%H:%M') == run_time:\n        os.system('python your_script.py')\n        break\n    time.sleep(60)\n```",
+	    "text": "Run a Python script at a specific time Running a script at a specific time... ```python\nimport time\nimport os\nfrom datetime import datetime\nrun_time = input('Enter the time to run the script (HH:MM): ')\nwhile True:\n    if datetime.now().strftime('%H:%M') == run_time:\n        os.system('python your_script.py')\n        break\n    time.sleep(60)\n```"
+	},
+	{
+	    "instruction": "Rename all files in a folder to lowercase",
+	    "input": "Renaming all files to lowercase...",
+	    "output": "```python\nimport os\nfolder = input('Enter the folder path: ')\nfor filename in os.listdir(folder):\n    os.rename(os.path.join(folder, filename), os.path.join(folder, filename.lower()))\n```",
+	    "text": "Rename all files in a folder to lowercase Renaming all files to lowercase... ```python\nimport os\nfolder = input('Enter the folder path: ')\nfor filename in os.listdir(folder):\n    os.rename(os.path.join(folder, filename), os.path.join(folder, filename.lower()))\n```"
+	},
+	{
+	    "instruction": "Count the number of lines in a file",
+	    "input": "Counting lines in a file...",
+	    "output": "```python\nfilename = input('Enter the filename: ')\nwith open(filename, 'r') as f:\n    line_count = sum(1 for _ in f)\nprint(f'The file has {line_count} lines.')\n```",
+	    "text": "Count the number of lines in a file Counting lines in a file... ```python\nfilename = input('Enter the filename: ')\nwith open(filename, 'r') as f:\n    line_count = sum(1 for _ in f)\nprint(f'The file has {line_count} lines.')\n```"
+	},
+	{
+	    "instruction": "List all branches in a Git repository",
+	    "input": "Listing all Git branches...",
+	    "output": "```python\nimport os\nos.system('git branch')\n```",
+	    "text": "List all branches in a Git repository Listing all Git branches... ```python\nimport os\nos.system('git branch')\n```"
+	},
+	{
+	    "instruction": "Create a ZIP archive of a folder",
+	    "input": "Creating ZIP archive...",
+	    "output": "```python\nimport shutil\nfolder_name = input('Enter the folder name to zip: ')\nshutil.make_archive(folder_name, 'zip', folder_name)\n```",
+	    "text": "Create a ZIP archive of a folder Creating ZIP archive... ```python\nimport shutil\nfolder_name = input('Enter the folder name to zip: ')\nshutil.make_archive(folder_name, 'zip', folder_name)\n```"
+	},
+	{
+	    "instruction": "Push changes to a GitHub repository",
+	    "input": "Pushing changes to GitHub...",
+	    "output": "```python\nimport os\nbranch_name = input('Enter the branch name: ')\ncommit_message = input('Enter the commit message: ')\nos.system(f'git add . && git commit -m \"{commit_message}\" && git push origin {branch_name}')\n```",
+	    "text": "Push changes to a GitHub repository Pushing changes to GitHub... ```python\nimport os\nbranch_name = input('Enter the branch name: ')\ncommit_message = input('Enter the commit message: ')\nos.system(f'git add . && git commit -m \"{commit_message}\" && git push origin {branch_name}')\n```"
+	},
+	{
+	    "instruction": "Start a local web server",
+	    "input": "Starting a local web server...",
+	    "output": "```python\nimport os\nport = input('Enter the port number: ')\nos.system(f'python -m http.server {port}')\n```",
+	    "text": "Start a local web server Starting a local web server... ```python\nimport os\nport = input('Enter the port number: ')\nos.system(f'python -m http.server {port}')\n```"
+	},
+	{
+	    "instruction": "Create an HTTP server to share files",
+	    "input": "Creating an HTTP file server...",
+	    "output": "```python\nimport http.server\nimport socketserver\nPORT = 8000\nHandler = http.server.SimpleHTTPRequestHandler\nwith socketserver.TCPServer(('', PORT), Handler) as httpd:\n    print(f'Serving at port {PORT}')\n    httpd.serve_forever()\n```",
+	    "text": "Create an HTTP server to share files Creating an HTTP file server... ```python\nimport http.server\nimport socketserver\nPORT = 8000\nHandler = http.server.SimpleHTTPRequestHandler\nwith socketserver.TCPServer(('', PORT), Handler) as httpd:\n    print(f'Serving at port {PORT}')\n    httpd.serve_forever()\n```"
+	},
+	{
+	    "instruction": "Create a symbolic link",
+	    "input": "Creating a symbolic link...",
+	    "output": "```python\nimport os\nsrc = input('Enter the source file path: ')\ndest = input('Enter the destination link path: ')\nos.symlink(src, dest)\n```",
+	    "text": "Create a symbolic link Creating a symbolic link... ```python\nimport os\nsrc = input('Enter the source file path: ')\ndest = input('Enter the destination link path: ')\nos.symlink(src, dest)\n```"
+	},
+	{
+	    "instruction": "Extract the text content from a webpage",
+	    "input": "Extracting text content...",
+	    "output": "```python\nimport requests\nfrom bs4 import BeautifulSoup\nurl = input('Enter the URL: ')\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.content, 'html.parser')\ntext = soup.stripped_strings\nprint(' '.join(text))\n```",
+	    "text": "Extract the text content from a webpage Extracting text content... ```python\nimport requests\nfrom bs4 import BeautifulSoup\nurl = input('Enter the URL: ')\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.content, 'html.parser')\ntext = soup.stripped_strings\nprint(' '.join(text))\n```"
+	},
+	{
+	    "instruction": "Extract all email addresses from a text file",
+	    "input": "Extracting email addresses...",
+	    "output": "```python\nimport re\nfile_path = input('Enter the text file path: ')\nwith open(file_path, 'r') as f:\n    content = f.read()\nemails = re.findall(r'\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b', content)\nprint(emails)\n```",
+	    "text": "Extract all email addresses from a text file Extracting email addresses... ```python\nimport re\nfile_path = input('Enter the text file path: ')\nwith open(file_path, 'r') as f:\n    content = f.read()\nemails = re.findall(r'\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b', content)\nprint(emails)\n```"
+	},
+	{
+	    "instruction": "Check for updates of a specific Python package",
+	    "input": "Checking for package updates...",
+	    "output": "```python\nimport os\npackage_name = input('Enter the Python package name: ')\nos.system(f'pip search {package_name}')\n```",
+	    "text": "Check for updates of a specific Python package Checking for package updates... ```python\nimport os\npackage_name = input('Enter the Python package name: ')\nos.system(f'pip search {package_name}')\n```"
+	},
+	{
+	    "instruction": "Remove trailing whitespaces from a Python file",
+	    "input": "Removing trailing whitespaces...",
+	    "output": "```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = f.readlines()\n    f.seek(0)\n    for line in lines:\n        f.write(line.rstrip() + '\\n')\n    f.truncate()\n```",
+	    "text": "Remove trailing whitespaces from a Python file Removing trailing whitespaces... ```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = f.readlines()\n    f.seek(0)\n    for line in lines:\n        f.write(line.rstrip() + '\\n')\n    f.truncate()\n```"
+	},
+	{
+	    "instruction": "Convert tabs to spaces in a Python file",
+	    "input": "Converting tabs to spaces...",
+	    "output": "```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    content = f.read().replace('\\t', '    ')\n    f.seek(0)\n    f.write(content)\n    f.truncate()\n```",
+	    "text": "Convert tabs to spaces in a Python file Converting tabs to spaces... ```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    content = f.read().replace('\\t', '    ')\n    f.seek(0)\n    f.write(content)\n    f.truncate()\n```"
+	},
+	{
+	    "instruction": "Sort the import statements alphabetically",
+	    "input": "Sorting import statements...",
+	    "output": "```python\nimport re\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = f.readlines()\n    imports = sorted([line for line in lines if line.startswith('import') or line.startswith('from')])\n    rest = [line for line in lines if not line.startswith('import') and not line.startswith('from')]\n    f.seek(0)\n    f.writelines(imports + rest)\n    f.truncate()\n```",
+	    "text": "Sort the import statements alphabetically Sorting import statements... ```python\nimport re\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = f.readlines()\n    imports = sorted([line for line in lines if line.startswith('import') or line.startswith('from')])\n    rest = [line for line in lines if not line.startswith('import') and not line.startswith('from')]\n    f.seek(0)\n    f.writelines(imports + rest)\n    f.truncate()\n```"
+	},
+	{
+	    "instruction": "Break lines longer than 80 characters",
+	    "input": "Breaking long lines...",
+	    "output": "```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = f.readlines()\n    f.seek(0)\n    for line in lines:\n        if len(line) > 80:\n            parts = [line[i:i+80] for i in range(0, len(line), 80)]\n            f.writelines(parts)\n        else:\n            f.write(line)\n    f.truncate()\n```",
+	    "text": "Break lines longer than 80 characters Breaking long lines... ```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = f.readlines()\n    f.seek(0)\n    for line in lines:\n        if len(line) > 80:\n            parts = [line[i:i+80] for i in range(0, len(line), 80)]\n            f.writelines(parts)\n        else:\n            f.write(line)\n    f.truncate()\n```"
+	},
+	{
+	    "instruction": "Convert a Python file to PEP8 standards",
+	    "input": "Converting to PEP8 standards...",
+	    "output": "```python\nimport os\nfile_path = input('Enter the Python file path: ')\nos.system(f'autopep8 --in-place {file_path}')\n```",
+	    "text": "Convert a Python file to PEP8 standards Converting to PEP8 standards... ```python\nimport os\nfile_path = input('Enter the Python file path: ')\nos.system(f'autopep8 --in-place {file_path}')\n```"
+	},
+	{
+	    "instruction": "Add type annotations to function arguments",
+	    "input": "Adding type annotations...",
+	    "output": "```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = f.readlines()\n    f.seek(0)\n    for line in lines:\n        if 'def ' in line:\n            line = line.replace('(', '(', 1).replace(')', ': Any)', 1)\n        f.write(line)\n    f.truncate()\n```",
+	    "text": "Add type annotations to function arguments Adding type annotations... ```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = f.readlines()\n    f.seek(0)\n    for line in lines:\n        if 'def ' in line:\n            line = line.replace('(', '(', 1).replace(')', ': Any)', 1)\n        f.write(line)\n    f.truncate()\n```"
+	},
+	{
+	    "instruction": "Remove all comments from a Python file",
+	    "input": "Removing all comments...",
+	    "output": "```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = [line for line in f.readlines() if not line.strip().startswith('#')]\n    f.seek(0)\n    f.writelines(lines)\n    f.truncate()\n```",
+	    "text": "Remove all comments from a Python file Removing all comments... ```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = [line for line in f.readlines() if not line.strip().startswith('#')]\n    f.seek(0)\n    f.writelines(lines)\n    f.truncate()\n```"
+	},
+	{
+	    "instruction": "Remove all print statements from a Python file",
+	    "input": "Removing print statements...",
+	    "output": "```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = [line for line in f.readlines() if 'print(' not in line]\n    f.seek(0)\n    f.writelines(lines)\n    f.truncate()\n```",
+	    "text": "Remove all print statements from a Python file Removing print statements... ```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = [line for line in f.readlines() if 'print(' not in line]\n    f.seek(0)\n    f.writelines(lines)\n    f.truncate()\n```"
+	},
+	{
+	    "instruction": "Add docstrings to all functions",
+	    "input": "Adding docstrings...",
+	    "output": "```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = f.readlines()\n    f.seek(0)\n    for line in lines:\n        if 'def ' in line:\n            f.write('\"\"\"Function description.\"\"\"\\n')\n        f.write(line)\n    f.truncate()\n```",
+	    "text": "Add docstrings to all functions Adding docstrings... ```python\nfile_path = input('Enter the Python file path: ')\nwith open(file_path, 'r+') as f:\n    lines = f.readlines()\n    f.seek(0)\n    for line in lines:\n        if 'def ' in line:\n            f.write('\"\"\"Function description.\"\"\"\\n')\n        f.write(line)\n    f.truncate()\n```"
+	},
+	{
+	    "instruction": "Implement a simple feedforward neural network",
+	    "input": "Implementing a feedforward neural network...",
+	    "output": "```python\nimport torch\nimport torch.nn as nn\nimport torch.optim as optim\nclass SimpleNN(nn.Module):\n    def __init__(self):\n        super(SimpleNN, self).__init__()\n        self.fc1 = nn.Linear(10, 5)\n        self.fc2 = nn.Linear(5, 1)\n    def forward(self, x):\n        x = torch.relu(self.fc1(x))\n        x = self.fc2(x)\n        return x\nmodel = SimpleNN()\noptimizer = optim.SGD(model.parameters(), lr=0.01)\ncriterion = nn.MSELoss()\n# Training code here\n```",
+	    "text": "Implement a simple feedforward neural network Implementing a feedforward neural network... ```python\nimport torch\nimport torch.nn as nn\nimport torch.optim as optim\nclass SimpleNN(nn.Module):\n    def __init__(self):\n        super(SimpleNN, self).__init__()\n        self.fc1 = nn.Linear(10, 5)\n        self.fc2 = nn.Linear(5, 1)\n    def forward(self, x):\n        x = torch.relu(self.fc1(x))\n        x = self.fc2(x)\n        return x\nmodel = SimpleNN()\noptimizer = optim.SGD(model.parameters(), lr=0.01)\ncriterion = nn.MSELoss()\n# Training code here\n```"
+	},
+	{
+	    "instruction": "Implement an advanced feedforward neural network using PyTorch and train it",
+	    "input": "Implementing and training an advanced feedforward neural network...",
+	    "output": "```python\nimport torch\nimport torch.nn as nn\nimport torch.optim as optim\n# Neural Network\nclass AdvancedNN(nn.Module):\n    def __init__(self):\n        super(AdvancedNN, self).__init__()\n        self.fc1 = nn.Linear(10, 128)\n        self.fc2 = nn.Linear(128, 64)\n        self.fc3 = nn.Linear(64, 32)\n        self.fc4 = nn.Linear(32, 1)\n        self.dropout = nn.Dropout(0.2)\n    \n    def forward(self, x):\n        x = torch.relu(self.fc1(x))\n        x = self.dropout(x)\n        x = torch.relu(self.fc2(x))\n        x = self.dropout(x)\n        x = torch.relu(self.fc3(x))\n        x = self.fc4(x)\n        return x\n# Initialization\nmodel = AdvancedNN()\noptimizer = optim.Adam(model.parameters(), lr=0.001)\ncriterion = nn.MSELoss()\n# Training\nfor epoch in range(100):\n    for i, data in enumerate(train_loader):\n        inputs, labels = data\n        optimizer.zero_grad()\n        outputs = model(inputs)\n        loss = criterion(outputs, labels)\n        loss.backward()\n        optimizer.step()\n    print(f'Epoch {epoch+1}, Loss: {loss.item()}')\n```",
+	    "text": "Implement an advanced feedforward neural network using PyTorch and train it Implementing and training an advanced feedforward neural network... ```python\nimport torch\nimport torch.nn as nn\nimport torch.optim as optim\n# Neural Network\nclass AdvancedNN(nn.Module):\n    def __init__(self):\n        super(AdvancedNN, self).__init__()\n        self.fc1 = nn.Linear(10, 128)\n        self.fc2 = nn.Linear(128, 64)\n        self.fc3 = nn.Linear(64, 32)\n        self.fc4 = nn.Linear(32, 1)\n        self.dropout = nn.Dropout(0.2)\n    \n    def forward(self, x):\n        x = torch.relu(self.fc1(x))\n        x = self.dropout(x)\n        x = torch.relu(self.fc2(x))\n        x = self.dropout(x)\n        x = torch.relu(self.fc3(x))\n        x = self.fc4(x)\n        return x\n# Initialization\nmodel = AdvancedNN()\noptimizer = optim.Adam(model.parameters(), lr=0.001)\ncriterion = nn.MSELoss()\n# Training\nfor epoch in range(100):\n    for i, data in enumerate(train_loader):\n        inputs, labels = data\n        optimizer.zero_grad()\n        outputs = model(inputs)\n        loss = criterion(outputs, labels)\n        loss.backward()\n        optimizer.step()\n    print(f'Epoch {epoch+1}, Loss: {loss.item()}')\n```"
+	},
+	{
+	    "instruction": "Visualize the activations of a neural network layer",
+	    "input": "Visualizing activations...",
+	    "output": "```python\nimport matplotlib.pyplot as plt\nimport tensorflow as tf\nfrom tensorflow.keras.models import Model\nmodel = tf.keras.models.load_model('my_model.h5')\nlayer_outputs = [layer.output for layer in model.layers]\nactivation_model = Model(inputs=model.input, outputs=layer_outputs)\nactivations = activation_model.predict(input_data)\nplt.matshow(activations[0][0, :, :, 4], cmap='viridis')\n```",
+	    "text": "Visualize the activations of a neural network layer Visualizing activations... ```python\nimport matplotlib.pyplot as plt\nimport tensorflow as tf\nfrom tensorflow.keras.models import Model\nmodel = tf.keras.models.load_model('my_model.h5')\nlayer_outputs = [layer.output for layer in model.layers]\nactivation_model = Model(inputs=model.input, outputs=layer_outputs)\nactivations = activation_model.predict(input_data)\nplt.matshow(activations[0][0, :, :, 4], cmap='viridis')\n```"
+	},
+	{
+	    "instruction": "Implement a GAN to generate new data samples",
+	    "input": "Implementing a Generative Adversarial Network...",
+	    "output": "```python\nfrom tensorflow.keras.models import Sequential\nfrom tensorflow.keras.layers import Dense, Reshape, Flatten\n# Generator\nG = Sequential()\nG.add(Dense(128, activation='relu', input_dim=100))\nG.add(Dense(784, activation='sigmoid'))\nG.add(Reshape((28, 28)))\n# Discriminator\nD = Sequential()\nD.add(Flatten(input_shape=(28, 28)))\nD.add(Dense(128, activation='relu'))\nD.add(Dense(1, activation='sigmoid'))\n# GAN\nD.compile(optimizer='adam', loss='binary_crossentropy')\nD.trainable = False\nGAN = Sequential([G, D])\nGAN.compile(optimizer='adam', loss='binary_crossentropy')\n# Training code here\n```",
+	    "text": "Implement a GAN to generate new data samples Implementing a Generative Adversarial Network... ```python\nfrom tensorflow.keras.models import Sequential\nfrom tensorflow.keras.layers import Dense, Reshape, Flatten\n# Generator\nG = Sequential()\nG.add(Dense(128, activation='relu', input_dim=100))\nG.add(Dense(784, activation='sigmoid'))\nG.add(Reshape((28, 28)))\n# Discriminator\nD = Sequential()\nD.add(Flatten(input_shape=(28, 28)))\nD.add(Dense(128, activation='relu'))\nD.add(Dense(1, activation='sigmoid'))\n# GAN\nD.compile(optimizer='adam', loss='binary_crossentropy')\nD.trainable = False\nGAN = Sequential([G, D])\nGAN.compile(optimizer='adam', loss='binary_crossentropy')\n# Training code here\n```"
+	},
+	{
+	    "instruction": "Extract features from an image using a pre-trained CNN",
+	    "input": "Extracting features using a pre-trained CNN...",
+	    "output": "```python\nfrom tensorflow.keras.applications import VGG16\nfrom tensorflow.keras.preprocessing import image\nfrom tensorflow.keras.applications.vgg16 import preprocess_input\nimport numpy as np\nmodel = VGG16(weights='imagenet', include_top=False)\nimg_path = 'image.jpg'\nimg = image.load_img(img_path, target_size=(224, 224))\nimg_array = image.img_to_array(img)\nimg_array = np.expand_dims(img_array, axis=0)\nimg_array = preprocess_input(img_array)\nfeatures = model.predict(img_array)\n```",
+	    "text": "Extract features from an image using a pre-trained CNN Extracting features using a pre-trained CNN... ```python\nfrom tensorflow.keras.applications import VGG16\nfrom tensorflow.keras.preprocessing import image\nfrom tensorflow.keras.applications.vgg16 import preprocess_input\nimport numpy as np\nmodel = VGG16(weights='imagenet', include_top=False)\nimg_path = 'image.jpg'\nimg = image.load_img(img_path, target_size=(224, 224))\nimg_array = image.img_to_array(img)\nimg_array = np.expand_dims(img_array, axis=0)\nimg_array = preprocess_input(img_array)\nfeatures = model.predict(img_array)\n```"
+	},
+	{
+	    "instruction": "Implement a Random Forest Classifier using scikit-learn",
+	    "input": "Implementing a Random Forest Classifier...",
+	    "output": "```python\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.datasets import load_iris\nX, y = load_iris(return_X_y=True)\nclf = RandomForestClassifier(n_estimators=100)\nclf.fit(X, y)\n```",
+	    "text": "Implement a Random Forest Classifier using scikit-learn Implementing a Random Forest Classifier... ```python\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.datasets import load_iris\nX, y = load_iris(return_X_y=True)\nclf = RandomForestClassifier(n_estimators=100)\nclf.fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Create a TensorFlow model to recognize handwritten digits",
+	    "input": "Creating a TensorFlow model for handwritten digit recognition...",
+	    "output": "```python\nimport tensorflow as tf\nmnist = tf.keras.datasets.mnist\n(x_train, y_train), (x_test, y_test) = mnist.load_data()\nmodel = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28)), tf.keras.layers.Dense(128, activation='relu'), tf.keras.layers.Dense(10)])\nmodel.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])\nmodel.fit(x_train, y_train, epochs=5)\n```",
+	    "text": "Create a TensorFlow model to recognize handwritten digits Creating a TensorFlow model for handwritten digit recognition... ```python\nimport tensorflow as tf\nmnist = tf.keras.datasets.mnist\n(x_train, y_train), (x_test, y_test) = mnist.load_data()\nmodel = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28)), tf.keras.layers.Dense(128, activation='relu'), tf.keras.layers.Dense(10)])\nmodel.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])\nmodel.fit(x_train, y_train, epochs=5)\n```"
+	},
+	{
+	    "instruction": "Create a K-means clustering model to segment customers",
+	    "input": "Creating a K-means model to segment customers...",
+	    "output": "```python\nfrom sklearn.cluster import KMeans\nimport numpy as np\nX = np.array([[1, 2], [5, 8], [1.5, 1.8], [8, 8], [1, 0.6], [9, 11]])\nkmeans = KMeans(n_clusters=2)\nkmeans.fit(X)\n```",
+	    "text": "Create a K-means clustering model to segment customers Creating a K-means model to segment customers... ```python\nfrom sklearn.cluster import KMeans\nimport numpy as np\nX = np.array([[1, 2], [5, 8], [1.5, 1.8], [8, 8], [1, 0.6], [9, 11]])\nkmeans = KMeans(n_clusters=2)\nkmeans.fit(X)\n```"
+	},
+	{
+	    "instruction": "Implement a Naive Bayes classifier for text classification",
+	    "input": "Implementing a Naive Bayes classifier for text classification...",
+	    "output": "```python\nfrom sklearn.feature_extraction.text import CountVectorizer\nfrom sklearn.naive_bayes import MultinomialNB\ncorpus = ['hello world', 'hello AI', 'I love programming']\nvectorizer = CountVectorizer()\nX = vectorizer.fit_transform(corpus)\ny = [0, 1, 1]\nclf = MultinomialNB()\nclf.fit(X, y)\n```",
+	    "text": "Implement a Naive Bayes classifier for text classification Implementing a Naive Bayes classifier for text classification... ```python\nfrom sklearn.feature_extraction.text import CountVectorizer\nfrom sklearn.naive_bayes import MultinomialNB\ncorpus = ['hello world', 'hello AI', 'I love programming']\nvectorizer = CountVectorizer()\nX = vectorizer.fit_transform(corpus)\ny = [0, 1, 1]\nclf = MultinomialNB()\nclf.fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Implement a simple chatbot using Python's NLTK library",
+	    "input": "Implementing a simple chatbot using Python's NLTK...",
+	    "output": "```python\nimport nltk\nfrom nltk.chat.util import Chat, reflections\npairs = [(r'hi', 'hello'), (r'how are you', 'I am fine')]\nchatbot = Chat(pairs, reflections)\nchatbot.converse()\n```",
+	    "text": "Implement a simple chatbot using Python's NLTK library Implementing a simple chatbot using Python's NLTK... ```python\nimport nltk\nfrom nltk.chat.util import Chat, reflections\npairs = [(r'hi', 'hello'), (r'how are you', 'I am fine')]\nchatbot = Chat(pairs, reflections)\nchatbot.converse()\n```"
+	},
+	{
+	    "instruction": "Implement a Python script to control a robotic arm",
+	    "input": "Implementing a Python script to control a robotic arm...",
+	    "output": "```python\nimport pyfirmata\nboard = pyfirmata.Arduino('COM3')\nit = pyfirmata.util.Iterator(board)\nit.start()\narm = board.get_pin('d:10:s')\narm.write(90)\n```",
+	    "text": "Implement a Python script to control a robotic arm Implementing a Python script to control a robotic arm... ```python\nimport pyfirmata\nboard = pyfirmata.Arduino('COM3')\nit = pyfirmata.util.Iterator(board)\nit.start()\narm = board.get_pin('d:10:s')\narm.write(90)\n```"
+	},
+	{
+	    "instruction": "Implement reinforcement learning for a maze-solving bot",
+	    "input": "Implementing reinforcement learning for a maze-solving bot...",
+	    "output": "```python\nimport gym\nenv = gym.make('FrozenLake-v0')\nstate = env.reset()\nfor _ in range(1000):\n    action = env.action_space.sample()\n    state, reward, done, info = env.step(action)\n    if done:\n        break\n```",
+	    "text": "Implement reinforcement learning for a maze-solving bot Implementing reinforcement learning for a maze-solving bot... ```python\nimport gym\nenv = gym.make('FrozenLake-v0')\nstate = env.reset()\nfor _ in range(1000):\n    action = env.action_space.sample()\n    state, reward, done, info = env.step(action)\n    if done:\n        break\n```"
+	},
+	{
+	    "instruction": "Implement a linear regression model using scikit-learn",
+	    "input": "Implementing a linear regression model...",
+	    "output": "```python\nfrom sklearn.linear_model import LinearRegression\nimport numpy as np\nX = np.array([[1, 1], [1, 2], [2, 2], [2, 3]])\ny = np.dot(X, np.array([1, 2])) + 3\nreg = LinearRegression().fit(X, y)\n```",
+	    "text": "Implement a linear regression model using scikit-learn Implementing a linear regression model... ```python\nfrom sklearn.linear_model import LinearRegression\nimport numpy as np\nX = np.array([[1, 1], [1, 2], [2, 2], [2, 3]])\ny = np.dot(X, np.array([1, 2])) + 3\nreg = LinearRegression().fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Create a neural network for natural language processing using PyTorch",
+	    "input": "Creating a neural network for NLP...",
+	    "output": "```python\nimport torch\nimport torch.nn as nn\nimport torch.optim as optim\nclass NLPNet(nn.Module):\n    def __init__(self, vocab_size, embed_dim):\n        super(NLPNet, self).__init__()\n        self.embedding = nn.Embedding(vocab_size, embed_dim)\n        self.fc = nn.Linear(embed_dim, 1)\n    def forward(self, x):\n        x = self.embedding(x)\n        x = self.fc(x)\n        return x\n```",
+	    "text": "Create a neural network for natural language processing using PyTorch Creating a neural network for NLP... ```python\nimport torch\nimport torch.nn as nn\nimport torch.optim as optim\nclass NLPNet(nn.Module):\n    def __init__(self, vocab_size, embed_dim):\n        super(NLPNet, self).__init__()\n        self.embedding = nn.Embedding(vocab_size, embed_dim)\n        self.fc = nn.Linear(embed_dim, 1)\n    def forward(self, x):\n        x = self.embedding(x)\n        x = self.fc(x)\n        return x\n```"
+	},
+	{
+	    "instruction": "Implement a decision tree classifier to predict loan approval",
+	    "input": "Implementing a decision tree classifier for loan approval prediction...",
+	    "output": "```python\nfrom sklearn.tree import DecisionTreeClassifier\nX = [[0, 0], [1, 1]]\ny = [0, 1]\nclf = DecisionTreeClassifier()\nclf = clf.fit(X, y)\n```",
+	    "text": "Implement a decision tree classifier to predict loan approval Implementing a decision tree classifier for loan approval prediction... ```python\nfrom sklearn.tree import DecisionTreeClassifier\nX = [[0, 0], [1, 1]]\ny = [0, 1]\nclf = DecisionTreeClassifier()\nclf = clf.fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Implement a Support Vector Machine for binary classification",
+	    "input": "Implementing a Support Vector Machine for binary classification...",
+	    "output": "```python\nfrom sklearn import svm\nX = [[0, 0], [1, 1]]\ny = [0, 1]\nclf = svm.SVC()\nclf.fit(X, y)\n```",
+	    "text": "Implement a Support Vector Machine for binary classification Implementing a Support Vector Machine for binary classification... ```python\nfrom sklearn import svm\nX = [[0, 0], [1, 1]]\ny = [0, 1]\nclf = svm.SVC()\nclf.fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Create a Python script for sentiment analysis using TextBlob",
+	    "input": "Creating a Python script for sentiment analysis...",
+	    "output": "```python\nfrom textblob import TextBlob\ntext = 'I love programming'\nblob = TextBlob(text)\nsentiment = blob.sentiment.polarity\n```",
+	    "text": "Create a Python script for sentiment analysis using TextBlob Creating a Python script for sentiment analysis... ```python\nfrom textblob import TextBlob\ntext = 'I love programming'\nblob = TextBlob(text)\nsentiment = blob.sentiment.polarity\n```"
+	},
+	{
+	    "instruction": "Implement a logistic regression model for churn prediction",
+	    "input": "Implementing logistic regression for churn prediction...",
+	    "output": "```python\nfrom sklearn.linear_model import LogisticRegression\nX = [[0, 1], [1, 0], [2, 2]]\ny = [0, 1, 0]\nclf = LogisticRegression().fit(X, y)\n```",
+	    "text": "Implement a logistic regression model for churn prediction Implementing logistic regression for churn prediction... ```python\nfrom sklearn.linear_model import LogisticRegression\nX = [[0, 1], [1, 0], [2, 2]]\ny = [0, 1, 0]\nclf = LogisticRegression().fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Implement a neural network for image recognition using OpenCV",
+	    "input": "Implementing a neural network for image recognition...",
+	    "output": "```python\nimport cv2\nnet = cv2.dnn.readNetFromCaffe('deploy.prototxt', 'weights.caffemodel')\nimage = cv2.imread('image.jpg')\nblob = cv2.dnn.blobFromImage(image, 1.0, (224, 224), (104.0, 117.0, 123.0))\nnet.setInput(blob)\npreds = net.forward()\n```",
+	    "text": "Implement a neural network for image recognition using OpenCV Implementing a neural network for image recognition... ```python\nimport cv2\nnet = cv2.dnn.readNetFromCaffe('deploy.prototxt', 'weights.caffemodel')\nimage = cv2.imread('image.jpg')\nblob = cv2.dnn.blobFromImage(image, 1.0, (224, 224), (104.0, 117.0, 123.0))\nnet.setInput(blob)\npreds = net.forward()\n```"
+	},
+	{
+	    "instruction": "Create a Python script to simulate a PID controller",
+	    "input": "Creating a Python script to simulate a PID controller...",
+	    "output": "```python\nclass PID:\n    def __init__(self, Kp, Ki, Kd):\n        self.Kp = Kp\n        self.Ki = Ki\n        self.Kd = Kd\n    def compute(self, setpoint, measured_value):\n        error = setpoint - measured_value\n        return self.Kp * error\n```",
+	    "text": "Create a Python script to simulate a PID controller Creating a Python script to simulate a PID controller... ```python\nclass PID:\n    def __init__(self, Kp, Ki, Kd):\n        self.Kp = Kp\n        self.Ki = Ki\n        self.Kd = Kd\n    def compute(self, setpoint, measured_value):\n        error = setpoint - measured_value\n        return self.Kp * error\n```"
+	},
+	{
+	    "instruction": "Implement a genetic algorithm for solving optimization problems",
+	    "input": "",
+	    "output": "```python\nimport random\ndef fitness(individual): return sum(individual)\ndef mutate(individual): individual[random.randint(0, len(individual) - 1)] = 1 - individual[random.randint(0, len(individual) - 1)]\npopulation = [[random.randint(0, 1) for _ in range(10)] for _ in range(100)]\n```",
+	    "text": "Implement a genetic algorithm for solving optimization problems Implementing a genetic algorithm... ```python\nimport random\ndef fitness(individual): return sum(individual)\ndef mutate(individual): individual[random.randint(0, len(individual) - 1)] = 1 - individual[random.randint(0, len(individual) - 1)]\npopulation = [[random.randint(0, 1) for _ in range(10)] for _ in range(100)]\n```"
+	},
+	{
+	    "instruction": "Implement a Python script for anomaly detection using Isolation Forest",
+	    "input": "Implementing anomaly detection...",
+	    "output": "```python\nfrom sklearn.ensemble import IsolationForest\nX = [[0, 1], [0, -1], [-1, 0], [1, 0], [0, 0]]\nclf = IsolationForest().fit(X)\n```",
+	    "text": "Implement a Python script for anomaly detection using Isolation Forest Implementing anomaly detection... ```python\nfrom sklearn.ensemble import IsolationForest\nX = [[0, 1], [0, -1], [-1, 0], [1, 0], [0, 0]]\nclf = IsolationForest().fit(X)\n```"
+	},
+	{
+	    "instruction": "Implement a Principal Component Analysis for feature reduction",
+	    "input": "Implementing PCA for feature reduction...",
+	    "output": "```python\nfrom sklearn.decomposition import PCA\nX = [[1, 2, 3], [2, 4, 5], [3, 6, 7]]\npca = PCA(n_components=2)\nX_new = pca.fit_transform(X)\n```",
+	    "text": "Implement a Principal Component Analysis for feature reduction Implementing PCA for feature reduction... ```python\nfrom sklearn.decomposition import PCA\nX = [[1, 2, 3], [2, 4, 5], [3, 6, 7]]\npca = PCA(n_components=2)\nX_new = pca.fit_transform(X)\n```"
+	},
+	{
+	    "instruction": "Implement a k-Nearest Neighbors algorithm for classification",
+	    "input": "Implementing k-NN for classification...",
+	    "output": "```python\nfrom sklearn.neighbors import KNeighborsClassifier\nX = [[0], [1], [2], [3]]\ny = [0, 0, 1, 1]\nneigh = KNeighborsClassifier(n_neighbors=3)\nneigh.fit(X, y)\n```",
+	    "text": "Implement a k-Nearest Neighbors algorithm for classification Implementing k-NN for classification... ```python\nfrom sklearn.neighbors import KNeighborsClassifier\nX = [[0], [1], [2], [3]]\ny = [0, 0, 1, 1]\nneigh = KNeighborsClassifier(n_neighbors=3)\nneigh.fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Implement a Python script to perform web scraping and data extraction",
+	    "input": "Implementing web scraping...",
+	    "output": "```python\nimport requests\nfrom bs4 import BeautifulSoup\nresponse = requests.get('https://example.com')\nsoup = BeautifulSoup(response.text, 'html.parser')\ntitle = soup.find('title').get_text()\n```",
+	    "text": "Implement a Python script to perform web scraping and data extraction Implementing web scraping... ```python\nimport requests\nfrom bs4 import BeautifulSoup\nresponse = requests.get('https://example.com')\nsoup = BeautifulSoup(response.text, 'html.parser')\ntitle = soup.find('title').get_text()\n```"
+	},
+	{
+	    "instruction": "Scrape the data from https://sharegpt.com/c/4qj1DB0 and put into a dataset scraped_data.csv",
+	    "input": "Implementing web scraping and storing the data into a dataset...",
+	    "output": "```python\nimport requests\nfrom bs4 import BeautifulSoup\nimport pandas as pd\nresponse = requests.get('https://sharegpt.com/c/4qj1DB0')\nsoup = BeautifulSoup(response.text, 'html.parser')\ntitle = soup.find('title').get_text()\ndataset = pd.DataFrame([{'title': title}])\ndataset.to_csv('scraped_data.csv', index=False)\n```",
+	    "text": "Scrape the data from https://sharegpt.com/c/4qj1DB0 and put into a dataset scraped_data.csv Implementing web scraping and storing the data into a dataset... ```python\nimport requests\nfrom bs4 import BeautifulSoup\nimport pandas as pd\nresponse = requests.get('https://sharegpt.com/c/4qj1DB0')\nsoup = BeautifulSoup(response.text, 'html.parser')\ntitle = soup.find('title').get_text()\ndataset = pd.DataFrame([{'title': title}])\ndataset.to_csv('scraped_data.csv', index=False)\n```"
+	},
+	{
+	    "instruction": "Fetch the latest gaming news and display them interactively",
+	    "input": "Fetching and displaying the latest gaming news...",
+	    "output": "```python\nimport requests\nchoice = input('Enter the gaming category you are interested in: ')\nresponse = requests.get(f'https://api.example.com/gaming-news/{choice}')\ngaming_news = response.json()['articles']\nfor i, article in enumerate(gaming_news):\n    print(f'{i+1}. {article['title']}')\nselection = int(input('Select an article to read: '))\nprint(gaming_news[selection-1]['content'])\n```",
+	    "text": "Fetch the latest gaming news and display them interactively Fetching and displaying the latest gaming news... ```python\nimport requests\nchoice = input('Enter the gaming category you are interested in: ')\nresponse = requests.get(f'https://api.example.com/gaming-news/{choice}')\ngaming_news = response.json()['articles']\nfor i, article in enumerate(gaming_news):\n    print(f'{i+1}. {article['title']}')\nselection = int(input('Select an article to read: '))\nprint(gaming_news[selection-1]['content'])\n```"
+	},
+	{
+	    "instruction": "Monitor CPU and GPU temperature and alert if it's too high",
+	    "input": "Monitoring CPU and GPU temperature...",
+	    "output": "```python\nimport psutil\nthreshold = float(input('Enter the temperature threshold for alert: '))\nwhile True:\n    cpu_temp = psutil.sensors_temperatures()['coretemp'][0].current\n    gpu_temp = psutil.sensors_temperatures()['nvidia'][0].current\n    if cpu_temp > threshold or gpu_temp > threshold:\n        print('Temperature too high! Consider stopping the game.')\n```",
+	    "text": "Monitor CPU and GPU temperature and alert if it's too high Monitoring CPU and GPU temperature... ```python\nimport psutil\nthreshold = float(input('Enter the temperature threshold for alert: '))\nwhile True:\n    cpu_temp = psutil.sensors_temperatures()['coretemp'][0].current\n    gpu_temp = psutil.sensors_temperatures()['nvidia'][0].current\n    if cpu_temp > threshold or gpu_temp > threshold:\n        print('Temperature too high! Consider stopping the game.')\n```"
+	},
+	{
+	    "instruction": "Automatically update game mods based on user choice",
+	    "input": "Automatically updating game mods...",
+	    "output": "```python\nimport os\nmod_choice = input('Enter the mod name you want to update: ')\nos.system(f'curl -O https://example.com/mods/{mod_choice}.zip')\nos.system(f'unzip {mod_choice}.zip -d /path/to/game/mods/')\n```",
+	    "text": "Automatically update game mods based on user choice Automatically updating game mods... ```python\nimport os\nmod_choice = input('Enter the mod name you want to update: ')\nos.system(f'curl -O https://example.com/mods/{mod_choice}.zip')\nos.system(f'unzip {mod_choice}.zip -d /path/to/game/mods/')\n```"
+	},
+	{
+	    "instruction": "Fetch and display live game scores based on user's choice",
+	    "input": "Fetching and displaying live game scores...",
+	    "output": "```python\nimport requests\ngame = input('Which game scores would you like to see? ')\nresponse = requests.get(f'https://api.example.com/live-scores/{game}')\nscores = response.json()['scores']\nfor score in scores:\n    print(f'Team A: {score['team_a']}, Team B: {score['team_b']}, Score: {score['score']}')\n```",
+	    "text": "Fetch and display live game scores based on user's choice Fetching and displaying live game scores... ```python\nimport requests\ngame = input('Which game scores would you like to see? ')\nresponse = requests.get(f'https://api.example.com/live-scores/{game}')\nscores = response.json()['scores']\nfor score in scores:\n    print(f'Team A: {score['team_a']}, Team B: {score['team_b']}, Score: {score['score']}')\n```"
+	},
+	{
+	    "instruction": "Optimize game settings interactively based on hardware specs",
+	    "input": "Optimizing game settings based on hardware...",
+	    "output": "```python\nimport psutil\nchoice = input('Would you like to optimize game settings based on CPU? (yes/no): ')\nif choice.lower() == 'yes':\n    if psutil.cpu_count() > 4:\n        os.system('echo high > /path/to/game/settings.txt')\n    else:\n        os.system('echo low > /path/to/game/settings.txt')\n```",
+	    "text": "Optimize game settings interactively based on hardware specs Optimizing game settings based on hardware... ```python\nimport psutil\nchoice = input('Would you like to optimize game settings based on CPU? (yes/no): ')\nif choice.lower() == 'yes':\n    if psutil.cpu_count() > 4:\n        os.system('echo high > /path/to/game/settings.txt')\n    else:\n        os.system('echo low > /path/to/game/settings.txt')\n```"
+	},
+	{
+	    "instruction": "Suggest a game to play based on mood",
+	    "input": "Suggesting a game based on your mood...",
+	    "output": "```python\nmood = input('How are you feeling today? (relaxed/excited/sad): ')\ngame_suggestions = {'relaxed': 'Stardew Valley', 'excited': 'Rocket League', 'sad': 'Undertale'}\nprint(f'You should play {game_suggestions.get(mood, 'Any game you like')}')\n```",
+	    "text": "Suggest a game to play based on mood Suggesting a game based on your mood... ```python\nmood = input('How are you feeling today? (relaxed/excited/sad): ')\ngame_suggestions = {'relaxed': 'Stardew Valley', 'excited': 'Rocket League', 'sad': 'Undertale'}\nprint(f'You should play {game_suggestions.get(mood, 'Any game you like')}')\n```"
+	},
+	{
+	    "instruction": "Change game settings to dark mode if it's night time",
+	    "input": "Changing game settings to dark mode if it's night...",
+	    "output": "```python\nfrom datetime import datetime\nif datetime.now().hour > 18:\n    os.system('echo dark_mode=True > /path/to/game/settings.txt')\n```",
+	    "text": "Change game settings to dark mode if it's night time Changing game settings to dark mode if it's night... ```python\nfrom datetime import datetime\nif datetime.now().hour > 18:\n    os.system('echo dark_mode=True > /path/to/game/settings.txt')\n```"
+	},
+	{
+	    "instruction": "Mute all background apps while gaming",
+	    "input": "Muting all background apps...",
+	    "output": "```python\nimport os\nconfirm = input('Do you want to mute all background apps? (yes/no): ')\nif confirm.lower() == 'yes':\n    os.system('nircmd muteappvolume * 1')\n```",
+	    "text": "Mute all background apps while gaming Muting all background apps... ```python\nimport os\nconfirm = input('Do you want to mute all background apps? (yes/no): ')\nif confirm.lower() == 'yes':\n    os.system('nircmd muteappvolume * 1')\n```"
+	},
+	{
+	    "instruction": "Display a summary of my gaming stats",
+	    "input": "Displaying a summary of your gaming stats...",
+	    "output": "```python\nimport json\ngame = input('Which game stats would you like to see? ')\nwith open(f'/path/to/{game}_stats.json', 'r') as f:\n    stats = json.load(f)\n    for key, value in stats.items():\n        print(f'{key}: {value}')\n```",
+	    "text": "Display a summary of my gaming stats Displaying a summary of your gaming stats... ```python\nimport json\ngame = input('Which game stats would you like to see? ')\nwith open(f'/path/to/{game}_stats.json', 'r') as f:\n    stats = json.load(f)\n    for key, value in stats.items():\n        print(f'{key}: {value}')\n```"
+	},
+	{
+	    "instruction": "Find online co-op games available now",
+	    "input": "Finding available online co-op games...",
+	    "output": "```python\nimport requests\nresponse = requests.get('https://api.example.com/coop-games')\ngames = response.json()['games']\nfor i, game in enumerate(games):\n    print(f'{i+1}. {game['name']}')\nchoice = int(input('Select a game to know more about: '))\nprint(games[choice - 1]['details'])\n```",
+	    "text": "Find online co-op games available now Finding available online co-op games... ```python\nimport requests\nresponse = requests.get('https://api.example.com/coop-games')\ngames = response.json()['games']\nfor i, game in enumerate(games):\n    print(f'{i+1}. {game['name']}')\nchoice = int(input('Select a game to know more about: '))\nprint(games[choice - 1]['details'])\n```"
+	},
+	{
+	    "instruction": "Check if any of my Steam friends are online",
+	    "input": "Checking your Steam friends' status...",
+	    "output": "```python\nimport requests\nsteam_id = input('Enter your Steam ID: ')\nresponse = requests.get(f'https://api.steampowered.com/ISteamUser/GetFriendList/v1?key=YOUR_KEY&steamid={steam_id}')\nfriends = response.json()['friendslist']['friends']\nonline_friends = [friend for friend in friends if friend['personastate'] == 1]\nprint(f'Online friends: {online_friends}')\n```",
+	    "text": "Check if any of my Steam friends are online Checking your Steam friends' status... ```python\nimport requests\nsteam_id = input('Enter your Steam ID: ')\nresponse = requests.get(f'https://api.steampowered.com/ISteamUser/GetFriendList/v1?key=YOUR_KEY&steamid={steam_id}')\nfriends = response.json()['friendslist']['friends']\nonline_friends = [friend for friend in friends if friend['personastate'] == 1]\nprint(f'Online friends: {online_friends}')\n```"
+	},
+	{
+	    "instruction": "Suggest a game based on my mood and genre preference",
+	    "input": "",
+	    "output": "```python\nmood = input('What is your mood? (Happy, Sad, Excited): ')\ngenre = input('What is your favorite genre? (Action, Adventure, RPG): ')\nif mood == 'Happy' and genre == 'Action':\n    print('You should play Super Mario Odyssey.')\n```",
+	    "text": "Suggest a game based on my mood and genre preference Suggesting a game... ```python\nmood = input('What is your mood? (Happy, Sad, Excited): ')\ngenre = input('What is your favorite genre? (Action, Adventure, RPG): ')\nif mood == 'Happy' and genre == 'Action':\n    print('You should play Super Mario Odyssey.')\n```"
+	},
+	{
+	    "instruction": "Remind me to take breaks during gaming",
+	    "input": "Setting reminders for breaks...",
+	    "output": "```python\nimport time\nbreak_time = int(input('How many minutes between each break? '))\nwhile True:\n    time.sleep(break_time * 60)\n    print('Time to take a break!')\n```",
+	    "text": "Remind me to take breaks during gaming Setting reminders for breaks... ```python\nimport time\nbreak_time = int(input('How many minutes between each break? '))\nwhile True:\n    time.sleep(break_time * 60)\n    print('Time to take a break!')\n```"
+	},
+	{
+	    "instruction": "Calculate the odds of winning a game based on my stats",
+	    "input": "Calculating odds...",
+	    "output": "```python\nkills = int(input('Enter your average kills per game: '))\ndeaths = int(input('Enter your average deaths per game: '))\nodds = (kills / (kills + deaths)) * 100\nprint(f'Your odds of winning are approximately {odds:.2f}%')\n```",
+	    "text": "Calculate the odds of winning a game based on my stats Calculating odds... ```python\nkills = int(input('Enter your average kills per game: '))\ndeaths = int(input('Enter your average deaths per game: '))\nodds = (kills / (kills + deaths)) * 100\nprint(f'Your odds of winning are approximately {odds:.2f}%')\n```"
+	},
+	{
+	    "instruction": "Suggest me a game based on my hardware specs",
+	    "input": "",
+	    "output": "```python\nram = int(input('Enter your RAM size in GB: '))\nif ram >= 16:\n    print('You should play Cyberpunk 2077.')\n```",
+	    "text": "Suggest me a game based on my hardware specs Suggesting a game... ```python\nram = int(input('Enter your RAM size in GB: '))\nif ram >= 16:\n    print('You should play Cyberpunk 2077.')\n```"
+	}
