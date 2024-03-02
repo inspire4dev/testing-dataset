@@ -406,5 +406,215 @@
 	    "input": "Implementing a Random Forest Classifier...",
 	    "output": "```python\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.datasets import load_iris\nX, y = load_iris(return_X_y=True)\nclf = RandomForestClassifier(n_estimators=100)\nclf.fit(X, y)\n```",
 	    "text": "Implement a Random Forest Classifier using scikit-learn Implementing a Random Forest Classifier... ```python\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.datasets import load_iris\nX, y = load_iris(return_X_y=True)\nclf = RandomForestClassifier(n_estimators=100)\nclf.fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Create a TensorFlow model to recognize handwritten digits",
+	    "input": "Creating a TensorFlow model for handwritten digit recognition...",
+	    "output": "```python\nimport tensorflow as tf\nmnist = tf.keras.datasets.mnist\n(x_train, y_train), (x_test, y_test) = mnist.load_data()\nmodel = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28)), tf.keras.layers.Dense(128, activation='relu'), tf.keras.layers.Dense(10)])\nmodel.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])\nmodel.fit(x_train, y_train, epochs=5)\n```",
+	    "text": "Create a TensorFlow model to recognize handwritten digits Creating a TensorFlow model for handwritten digit recognition... ```python\nimport tensorflow as tf\nmnist = tf.keras.datasets.mnist\n(x_train, y_train), (x_test, y_test) = mnist.load_data()\nmodel = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28,28)), tf.keras.layers.Dense(128, activation='relu'), tf.keras.layers.Dense(10)])\nmodel.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])\nmodel.fit(x_train, y_train, epochs=5)\n```"
+	},
+	{
+	    "instruction": "Create a K-means clustering model to segment customers",
+	    "input": "Creating a K-means model to segment customers...",
+	    "output": "```python\nfrom sklearn.cluster import KMeans\nimport numpy as np\nX = np.array([[1, 2], [5, 8], [1.5, 1.8], [8, 8], [1, 0.6], [9, 11]])\nkmeans = KMeans(n_clusters=2)\nkmeans.fit(X)\n```",
+	    "text": "Create a K-means clustering model to segment customers Creating a K-means model to segment customers... ```python\nfrom sklearn.cluster import KMeans\nimport numpy as np\nX = np.array([[1, 2], [5, 8], [1.5, 1.8], [8, 8], [1, 0.6], [9, 11]])\nkmeans = KMeans(n_clusters=2)\nkmeans.fit(X)\n```"
+	},
+	{
+	    "instruction": "Implement a Naive Bayes classifier for text classification",
+	    "input": "Implementing a Naive Bayes classifier for text classification...",
+	    "output": "```python\nfrom sklearn.feature_extraction.text import CountVectorizer\nfrom sklearn.naive_bayes import MultinomialNB\ncorpus = ['hello world', 'hello AI', 'I love programming']\nvectorizer = CountVectorizer()\nX = vectorizer.fit_transform(corpus)\ny = [0, 1, 1]\nclf = MultinomialNB()\nclf.fit(X, y)\n```",
+	    "text": "Implement a Naive Bayes classifier for text classification Implementing a Naive Bayes classifier for text classification... ```python\nfrom sklearn.feature_extraction.text import CountVectorizer\nfrom sklearn.naive_bayes import MultinomialNB\ncorpus = ['hello world', 'hello AI', 'I love programming']\nvectorizer = CountVectorizer()\nX = vectorizer.fit_transform(corpus)\ny = [0, 1, 1]\nclf = MultinomialNB()\nclf.fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Implement a simple chatbot using Python's NLTK library",
+	    "input": "Implementing a simple chatbot using Python's NLTK...",
+	    "output": "```python\nimport nltk\nfrom nltk.chat.util import Chat, reflections\npairs = [(r'hi', 'hello'), (r'how are you', 'I am fine')]\nchatbot = Chat(pairs, reflections)\nchatbot.converse()\n```",
+	    "text": "Implement a simple chatbot using Python's NLTK library Implementing a simple chatbot using Python's NLTK... ```python\nimport nltk\nfrom nltk.chat.util import Chat, reflections\npairs = [(r'hi', 'hello'), (r'how are you', 'I am fine')]\nchatbot = Chat(pairs, reflections)\nchatbot.converse()\n```"
+	},
+	{
+	    "instruction": "Implement a Python script to control a robotic arm",
+	    "input": "Implementing a Python script to control a robotic arm...",
+	    "output": "```python\nimport pyfirmata\nboard = pyfirmata.Arduino('COM3')\nit = pyfirmata.util.Iterator(board)\nit.start()\narm = board.get_pin('d:10:s')\narm.write(90)\n```",
+	    "text": "Implement a Python script to control a robotic arm Implementing a Python script to control a robotic arm... ```python\nimport pyfirmata\nboard = pyfirmata.Arduino('COM3')\nit = pyfirmata.util.Iterator(board)\nit.start()\narm = board.get_pin('d:10:s')\narm.write(90)\n```"
+	},
+	{
+	    "instruction": "Implement reinforcement learning for a maze-solving bot",
+	    "input": "Implementing reinforcement learning for a maze-solving bot...",
+	    "output": "```python\nimport gym\nenv = gym.make('FrozenLake-v0')\nstate = env.reset()\nfor _ in range(1000):\n    action = env.action_space.sample()\n    state, reward, done, info = env.step(action)\n    if done:\n        break\n```",
+	    "text": "Implement reinforcement learning for a maze-solving bot Implementing reinforcement learning for a maze-solving bot... ```python\nimport gym\nenv = gym.make('FrozenLake-v0')\nstate = env.reset()\nfor _ in range(1000):\n    action = env.action_space.sample()\n    state, reward, done, info = env.step(action)\n    if done:\n        break\n```"
+	},
+	{
+	    "instruction": "Implement a linear regression model using scikit-learn",
+	    "input": "Implementing a linear regression model...",
+	    "output": "```python\nfrom sklearn.linear_model import LinearRegression\nimport numpy as np\nX = np.array([[1, 1], [1, 2], [2, 2], [2, 3]])\ny = np.dot(X, np.array([1, 2])) + 3\nreg = LinearRegression().fit(X, y)\n```",
+	    "text": "Implement a linear regression model using scikit-learn Implementing a linear regression model... ```python\nfrom sklearn.linear_model import LinearRegression\nimport numpy as np\nX = np.array([[1, 1], [1, 2], [2, 2], [2, 3]])\ny = np.dot(X, np.array([1, 2])) + 3\nreg = LinearRegression().fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Create a neural network for natural language processing using PyTorch",
+	    "input": "Creating a neural network for NLP...",
+	    "output": "```python\nimport torch\nimport torch.nn as nn\nimport torch.optim as optim\nclass NLPNet(nn.Module):\n    def __init__(self, vocab_size, embed_dim):\n        super(NLPNet, self).__init__()\n        self.embedding = nn.Embedding(vocab_size, embed_dim)\n        self.fc = nn.Linear(embed_dim, 1)\n    def forward(self, x):\n        x = self.embedding(x)\n        x = self.fc(x)\n        return x\n```",
+	    "text": "Create a neural network for natural language processing using PyTorch Creating a neural network for NLP... ```python\nimport torch\nimport torch.nn as nn\nimport torch.optim as optim\nclass NLPNet(nn.Module):\n    def __init__(self, vocab_size, embed_dim):\n        super(NLPNet, self).__init__()\n        self.embedding = nn.Embedding(vocab_size, embed_dim)\n        self.fc = nn.Linear(embed_dim, 1)\n    def forward(self, x):\n        x = self.embedding(x)\n        x = self.fc(x)\n        return x\n```"
+	},
+	{
+	    "instruction": "Implement a decision tree classifier to predict loan approval",
+	    "input": "Implementing a decision tree classifier for loan approval prediction...",
+	    "output": "```python\nfrom sklearn.tree import DecisionTreeClassifier\nX = [[0, 0], [1, 1]]\ny = [0, 1]\nclf = DecisionTreeClassifier()\nclf = clf.fit(X, y)\n```",
+	    "text": "Implement a decision tree classifier to predict loan approval Implementing a decision tree classifier for loan approval prediction... ```python\nfrom sklearn.tree import DecisionTreeClassifier\nX = [[0, 0], [1, 1]]\ny = [0, 1]\nclf = DecisionTreeClassifier()\nclf = clf.fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Implement a Support Vector Machine for binary classification",
+	    "input": "Implementing a Support Vector Machine for binary classification...",
+	    "output": "```python\nfrom sklearn import svm\nX = [[0, 0], [1, 1]]\ny = [0, 1]\nclf = svm.SVC()\nclf.fit(X, y)\n```",
+	    "text": "Implement a Support Vector Machine for binary classification Implementing a Support Vector Machine for binary classification... ```python\nfrom sklearn import svm\nX = [[0, 0], [1, 1]]\ny = [0, 1]\nclf = svm.SVC()\nclf.fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Create a Python script for sentiment analysis using TextBlob",
+	    "input": "Creating a Python script for sentiment analysis...",
+	    "output": "```python\nfrom textblob import TextBlob\ntext = 'I love programming'\nblob = TextBlob(text)\nsentiment = blob.sentiment.polarity\n```",
+	    "text": "Create a Python script for sentiment analysis using TextBlob Creating a Python script for sentiment analysis... ```python\nfrom textblob import TextBlob\ntext = 'I love programming'\nblob = TextBlob(text)\nsentiment = blob.sentiment.polarity\n```"
+	},
+	{
+	    "instruction": "Implement a logistic regression model for churn prediction",
+	    "input": "Implementing logistic regression for churn prediction...",
+	    "output": "```python\nfrom sklearn.linear_model import LogisticRegression\nX = [[0, 1], [1, 0], [2, 2]]\ny = [0, 1, 0]\nclf = LogisticRegression().fit(X, y)\n```",
+	    "text": "Implement a logistic regression model for churn prediction Implementing logistic regression for churn prediction... ```python\nfrom sklearn.linear_model import LogisticRegression\nX = [[0, 1], [1, 0], [2, 2]]\ny = [0, 1, 0]\nclf = LogisticRegression().fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Implement a neural network for image recognition using OpenCV",
+	    "input": "Implementing a neural network for image recognition...",
+	    "output": "```python\nimport cv2\nnet = cv2.dnn.readNetFromCaffe('deploy.prototxt', 'weights.caffemodel')\nimage = cv2.imread('image.jpg')\nblob = cv2.dnn.blobFromImage(image, 1.0, (224, 224), (104.0, 117.0, 123.0))\nnet.setInput(blob)\npreds = net.forward()\n```",
+	    "text": "Implement a neural network for image recognition using OpenCV Implementing a neural network for image recognition... ```python\nimport cv2\nnet = cv2.dnn.readNetFromCaffe('deploy.prototxt', 'weights.caffemodel')\nimage = cv2.imread('image.jpg')\nblob = cv2.dnn.blobFromImage(image, 1.0, (224, 224), (104.0, 117.0, 123.0))\nnet.setInput(blob)\npreds = net.forward()\n```"
+	},
+	{
+	    "instruction": "Create a Python script to simulate a PID controller",
+	    "input": "Creating a Python script to simulate a PID controller...",
+	    "output": "```python\nclass PID:\n    def __init__(self, Kp, Ki, Kd):\n        self.Kp = Kp\n        self.Ki = Ki\n        self.Kd = Kd\n    def compute(self, setpoint, measured_value):\n        error = setpoint - measured_value\n        return self.Kp * error\n```",
+	    "text": "Create a Python script to simulate a PID controller Creating a Python script to simulate a PID controller... ```python\nclass PID:\n    def __init__(self, Kp, Ki, Kd):\n        self.Kp = Kp\n        self.Ki = Ki\n        self.Kd = Kd\n    def compute(self, setpoint, measured_value):\n        error = setpoint - measured_value\n        return self.Kp * error\n```"
+	},
+	{
+	    "instruction": "Implement a genetic algorithm for solving optimization problems",
+	    "input": "",
+	    "output": "```python\nimport random\ndef fitness(individual): return sum(individual)\ndef mutate(individual): individual[random.randint(0, len(individual) - 1)] = 1 - individual[random.randint(0, len(individual) - 1)]\npopulation = [[random.randint(0, 1) for _ in range(10)] for _ in range(100)]\n```",
+	    "text": "Implement a genetic algorithm for solving optimization problems Implementing a genetic algorithm... ```python\nimport random\ndef fitness(individual): return sum(individual)\ndef mutate(individual): individual[random.randint(0, len(individual) - 1)] = 1 - individual[random.randint(0, len(individual) - 1)]\npopulation = [[random.randint(0, 1) for _ in range(10)] for _ in range(100)]\n```"
+	},
+	{
+	    "instruction": "Implement a Python script for anomaly detection using Isolation Forest",
+	    "input": "Implementing anomaly detection...",
+	    "output": "```python\nfrom sklearn.ensemble import IsolationForest\nX = [[0, 1], [0, -1], [-1, 0], [1, 0], [0, 0]]\nclf = IsolationForest().fit(X)\n```",
+	    "text": "Implement a Python script for anomaly detection using Isolation Forest Implementing anomaly detection... ```python\nfrom sklearn.ensemble import IsolationForest\nX = [[0, 1], [0, -1], [-1, 0], [1, 0], [0, 0]]\nclf = IsolationForest().fit(X)\n```"
+	},
+	{
+	    "instruction": "Implement a Principal Component Analysis for feature reduction",
+	    "input": "Implementing PCA for feature reduction...",
+	    "output": "```python\nfrom sklearn.decomposition import PCA\nX = [[1, 2, 3], [2, 4, 5], [3, 6, 7]]\npca = PCA(n_components=2)\nX_new = pca.fit_transform(X)\n```",
+	    "text": "Implement a Principal Component Analysis for feature reduction Implementing PCA for feature reduction... ```python\nfrom sklearn.decomposition import PCA\nX = [[1, 2, 3], [2, 4, 5], [3, 6, 7]]\npca = PCA(n_components=2)\nX_new = pca.fit_transform(X)\n```"
+	},
+	{
+	    "instruction": "Implement a k-Nearest Neighbors algorithm for classification",
+	    "input": "Implementing k-NN for classification...",
+	    "output": "```python\nfrom sklearn.neighbors import KNeighborsClassifier\nX = [[0], [1], [2], [3]]\ny = [0, 0, 1, 1]\nneigh = KNeighborsClassifier(n_neighbors=3)\nneigh.fit(X, y)\n```",
+	    "text": "Implement a k-Nearest Neighbors algorithm for classification Implementing k-NN for classification... ```python\nfrom sklearn.neighbors import KNeighborsClassifier\nX = [[0], [1], [2], [3]]\ny = [0, 0, 1, 1]\nneigh = KNeighborsClassifier(n_neighbors=3)\nneigh.fit(X, y)\n```"
+	},
+	{
+	    "instruction": "Implement a Python script to perform web scraping and data extraction",
+	    "input": "Implementing web scraping...",
+	    "output": "```python\nimport requests\nfrom bs4 import BeautifulSoup\nresponse = requests.get('https://example.com')\nsoup = BeautifulSoup(response.text, 'html.parser')\ntitle = soup.find('title').get_text()\n```",
+	    "text": "Implement a Python script to perform web scraping and data extraction Implementing web scraping... ```python\nimport requests\nfrom bs4 import BeautifulSoup\nresponse = requests.get('https://example.com')\nsoup = BeautifulSoup(response.text, 'html.parser')\ntitle = soup.find('title').get_text()\n```"
+	},
+	{
+	    "instruction": "Scrape the data from https://sharegpt.com/c/4qj1DB0 and put into a dataset scraped_data.csv",
+	    "input": "Implementing web scraping and storing the data into a dataset...",
+	    "output": "```python\nimport requests\nfrom bs4 import BeautifulSoup\nimport pandas as pd\nresponse = requests.get('https://sharegpt.com/c/4qj1DB0')\nsoup = BeautifulSoup(response.text, 'html.parser')\ntitle = soup.find('title').get_text()\ndataset = pd.DataFrame([{'title': title}])\ndataset.to_csv('scraped_data.csv', index=False)\n```",
+	    "text": "Scrape the data from https://sharegpt.com/c/4qj1DB0 and put into a dataset scraped_data.csv Implementing web scraping and storing the data into a dataset... ```python\nimport requests\nfrom bs4 import BeautifulSoup\nimport pandas as pd\nresponse = requests.get('https://sharegpt.com/c/4qj1DB0')\nsoup = BeautifulSoup(response.text, 'html.parser')\ntitle = soup.find('title').get_text()\ndataset = pd.DataFrame([{'title': title}])\ndataset.to_csv('scraped_data.csv', index=False)\n```"
+	},
+	{
+	    "instruction": "Fetch the latest gaming news and display them interactively",
+	    "input": "Fetching and displaying the latest gaming news...",
+	    "output": "```python\nimport requests\nchoice = input('Enter the gaming category you are interested in: ')\nresponse = requests.get(f'https://api.example.com/gaming-news/{choice}')\ngaming_news = response.json()['articles']\nfor i, article in enumerate(gaming_news):\n    print(f'{i+1}. {article['title']}')\nselection = int(input('Select an article to read: '))\nprint(gaming_news[selection-1]['content'])\n```",
+	    "text": "Fetch the latest gaming news and display them interactively Fetching and displaying the latest gaming news... ```python\nimport requests\nchoice = input('Enter the gaming category you are interested in: ')\nresponse = requests.get(f'https://api.example.com/gaming-news/{choice}')\ngaming_news = response.json()['articles']\nfor i, article in enumerate(gaming_news):\n    print(f'{i+1}. {article['title']}')\nselection = int(input('Select an article to read: '))\nprint(gaming_news[selection-1]['content'])\n```"
+	},
+	{
+	    "instruction": "Monitor CPU and GPU temperature and alert if it's too high",
+	    "input": "Monitoring CPU and GPU temperature...",
+	    "output": "```python\nimport psutil\nthreshold = float(input('Enter the temperature threshold for alert: '))\nwhile True:\n    cpu_temp = psutil.sensors_temperatures()['coretemp'][0].current\n    gpu_temp = psutil.sensors_temperatures()['nvidia'][0].current\n    if cpu_temp > threshold or gpu_temp > threshold:\n        print('Temperature too high! Consider stopping the game.')\n```",
+	    "text": "Monitor CPU and GPU temperature and alert if it's too high Monitoring CPU and GPU temperature... ```python\nimport psutil\nthreshold = float(input('Enter the temperature threshold for alert: '))\nwhile True:\n    cpu_temp = psutil.sensors_temperatures()['coretemp'][0].current\n    gpu_temp = psutil.sensors_temperatures()['nvidia'][0].current\n    if cpu_temp > threshold or gpu_temp > threshold:\n        print('Temperature too high! Consider stopping the game.')\n```"
+	},
+	{
+	    "instruction": "Automatically update game mods based on user choice",
+	    "input": "Automatically updating game mods...",
+	    "output": "```python\nimport os\nmod_choice = input('Enter the mod name you want to update: ')\nos.system(f'curl -O https://example.com/mods/{mod_choice}.zip')\nos.system(f'unzip {mod_choice}.zip -d /path/to/game/mods/')\n```",
+	    "text": "Automatically update game mods based on user choice Automatically updating game mods... ```python\nimport os\nmod_choice = input('Enter the mod name you want to update: ')\nos.system(f'curl -O https://example.com/mods/{mod_choice}.zip')\nos.system(f'unzip {mod_choice}.zip -d /path/to/game/mods/')\n```"
+	},
+	{
+	    "instruction": "Fetch and display live game scores based on user's choice",
+	    "input": "Fetching and displaying live game scores...",
+	    "output": "```python\nimport requests\ngame = input('Which game scores would you like to see? ')\nresponse = requests.get(f'https://api.example.com/live-scores/{game}')\nscores = response.json()['scores']\nfor score in scores:\n    print(f'Team A: {score['team_a']}, Team B: {score['team_b']}, Score: {score['score']}')\n```",
+	    "text": "Fetch and display live game scores based on user's choice Fetching and displaying live game scores... ```python\nimport requests\ngame = input('Which game scores would you like to see? ')\nresponse = requests.get(f'https://api.example.com/live-scores/{game}')\nscores = response.json()['scores']\nfor score in scores:\n    print(f'Team A: {score['team_a']}, Team B: {score['team_b']}, Score: {score['score']}')\n```"
+	},
+	{
+	    "instruction": "Optimize game settings interactively based on hardware specs",
+	    "input": "Optimizing game settings based on hardware...",
+	    "output": "```python\nimport psutil\nchoice = input('Would you like to optimize game settings based on CPU? (yes/no): ')\nif choice.lower() == 'yes':\n    if psutil.cpu_count() > 4:\n        os.system('echo high > /path/to/game/settings.txt')\n    else:\n        os.system('echo low > /path/to/game/settings.txt')\n```",
+	    "text": "Optimize game settings interactively based on hardware specs Optimizing game settings based on hardware... ```python\nimport psutil\nchoice = input('Would you like to optimize game settings based on CPU? (yes/no): ')\nif choice.lower() == 'yes':\n    if psutil.cpu_count() > 4:\n        os.system('echo high > /path/to/game/settings.txt')\n    else:\n        os.system('echo low > /path/to/game/settings.txt')\n```"
+	},
+	{
+	    "instruction": "Suggest a game to play based on mood",
+	    "input": "Suggesting a game based on your mood...",
+	    "output": "```python\nmood = input('How are you feeling today? (relaxed/excited/sad): ')\ngame_suggestions = {'relaxed': 'Stardew Valley', 'excited': 'Rocket League', 'sad': 'Undertale'}\nprint(f'You should play {game_suggestions.get(mood, 'Any game you like')}')\n```",
+	    "text": "Suggest a game to play based on mood Suggesting a game based on your mood... ```python\nmood = input('How are you feeling today? (relaxed/excited/sad): ')\ngame_suggestions = {'relaxed': 'Stardew Valley', 'excited': 'Rocket League', 'sad': 'Undertale'}\nprint(f'You should play {game_suggestions.get(mood, 'Any game you like')}')\n```"
+	},
+	{
+	    "instruction": "Change game settings to dark mode if it's night time",
+	    "input": "Changing game settings to dark mode if it's night...",
+	    "output": "```python\nfrom datetime import datetime\nif datetime.now().hour > 18:\n    os.system('echo dark_mode=True > /path/to/game/settings.txt')\n```",
+	    "text": "Change game settings to dark mode if it's night time Changing game settings to dark mode if it's night... ```python\nfrom datetime import datetime\nif datetime.now().hour > 18:\n    os.system('echo dark_mode=True > /path/to/game/settings.txt')\n```"
+	},
+	{
+	    "instruction": "Mute all background apps while gaming",
+	    "input": "Muting all background apps...",
+	    "output": "```python\nimport os\nconfirm = input('Do you want to mute all background apps? (yes/no): ')\nif confirm.lower() == 'yes':\n    os.system('nircmd muteappvolume * 1')\n```",
+	    "text": "Mute all background apps while gaming Muting all background apps... ```python\nimport os\nconfirm = input('Do you want to mute all background apps? (yes/no): ')\nif confirm.lower() == 'yes':\n    os.system('nircmd muteappvolume * 1')\n```"
+	},
+	{
+	    "instruction": "Display a summary of my gaming stats",
+	    "input": "Displaying a summary of your gaming stats...",
+	    "output": "```python\nimport json\ngame = input('Which game stats would you like to see? ')\nwith open(f'/path/to/{game}_stats.json', 'r') as f:\n    stats = json.load(f)\n    for key, value in stats.items():\n        print(f'{key}: {value}')\n```",
+	    "text": "Display a summary of my gaming stats Displaying a summary of your gaming stats... ```python\nimport json\ngame = input('Which game stats would you like to see? ')\nwith open(f'/path/to/{game}_stats.json', 'r') as f:\n    stats = json.load(f)\n    for key, value in stats.items():\n        print(f'{key}: {value}')\n```"
+	},
+	{
+	    "instruction": "Find online co-op games available now",
+	    "input": "Finding available online co-op games...",
+	    "output": "```python\nimport requests\nresponse = requests.get('https://api.example.com/coop-games')\ngames = response.json()['games']\nfor i, game in enumerate(games):\n    print(f'{i+1}. {game['name']}')\nchoice = int(input('Select a game to know more about: '))\nprint(games[choice - 1]['details'])\n```",
+	    "text": "Find online co-op games available now Finding available online co-op games... ```python\nimport requests\nresponse = requests.get('https://api.example.com/coop-games')\ngames = response.json()['games']\nfor i, game in enumerate(games):\n    print(f'{i+1}. {game['name']}')\nchoice = int(input('Select a game to know more about: '))\nprint(games[choice - 1]['details'])\n```"
+	},
+	{
+	    "instruction": "Check if any of my Steam friends are online",
+	    "input": "Checking your Steam friends' status...",
+	    "output": "```python\nimport requests\nsteam_id = input('Enter your Steam ID: ')\nresponse = requests.get(f'https://api.steampowered.com/ISteamUser/GetFriendList/v1?key=YOUR_KEY&steamid={steam_id}')\nfriends = response.json()['friendslist']['friends']\nonline_friends = [friend for friend in friends if friend['personastate'] == 1]\nprint(f'Online friends: {online_friends}')\n```",
+	    "text": "Check if any of my Steam friends are online Checking your Steam friends' status... ```python\nimport requests\nsteam_id = input('Enter your Steam ID: ')\nresponse = requests.get(f'https://api.steampowered.com/ISteamUser/GetFriendList/v1?key=YOUR_KEY&steamid={steam_id}')\nfriends = response.json()['friendslist']['friends']\nonline_friends = [friend for friend in friends if friend['personastate'] == 1]\nprint(f'Online friends: {online_friends}')\n```"
+	},
+	{
+	    "instruction": "Suggest a game based on my mood and genre preference",
+	    "input": "",
+	    "output": "```python\nmood = input('What is your mood? (Happy, Sad, Excited): ')\ngenre = input('What is your favorite genre? (Action, Adventure, RPG): ')\nif mood == 'Happy' and genre == 'Action':\n    print('You should play Super Mario Odyssey.')\n```",
+	    "text": "Suggest a game based on my mood and genre preference Suggesting a game... ```python\nmood = input('What is your mood? (Happy, Sad, Excited): ')\ngenre = input('What is your favorite genre? (Action, Adventure, RPG): ')\nif mood == 'Happy' and genre == 'Action':\n    print('You should play Super Mario Odyssey.')\n```"
+	},
+	{
+	    "instruction": "Remind me to take breaks during gaming",
+	    "input": "Setting reminders for breaks...",
+	    "output": "```python\nimport time\nbreak_time = int(input('How many minutes between each break? '))\nwhile True:\n    time.sleep(break_time * 60)\n    print('Time to take a break!')\n```",
+	    "text": "Remind me to take breaks during gaming Setting reminders for breaks... ```python\nimport time\nbreak_time = int(input('How many minutes between each break? '))\nwhile True:\n    time.sleep(break_time * 60)\n    print('Time to take a break!')\n```"
+	},
+	{
+	    "instruction": "Calculate the odds of winning a game based on my stats",
+	    "input": "Calculating odds...",
+	    "output": "```python\nkills = int(input('Enter your average kills per game: '))\ndeaths = int(input('Enter your average deaths per game: '))\nodds = (kills / (kills + deaths)) * 100\nprint(f'Your odds of winning are approximately {odds:.2f}%')\n```",
+	    "text": "Calculate the odds of winning a game based on my stats Calculating odds... ```python\nkills = int(input('Enter your average kills per game: '))\ndeaths = int(input('Enter your average deaths per game: '))\nodds = (kills / (kills + deaths)) * 100\nprint(f'Your odds of winning are approximately {odds:.2f}%')\n```"
+	},
+	{
+	    "instruction": "Suggest me a game based on my hardware specs",
+	    "input": "",
+	    "output": "```python\nram = int(input('Enter your RAM size in GB: '))\nif ram >= 16:\n    print('You should play Cyberpunk 2077.')\n```",
+	    "text": "Suggest me a game based on my hardware specs Suggesting a game... ```python\nram = int(input('Enter your RAM size in GB: '))\nif ram >= 16:\n    print('You should play Cyberpunk 2077.')\n```"
 	}
 }
